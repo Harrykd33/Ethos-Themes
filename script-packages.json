@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "packages": [
+    {
+      "name": "Heli Model Wizard",
+      "repository": "Harrykd33/Ethos-RF-Model-Wizard",
+      "source": "rotorflight-model-wizard",
+      "folder": "rotorflight-model-wizard",
+      "branch": "main"
+    }
+  ]
+}

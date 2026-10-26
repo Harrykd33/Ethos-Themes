@@ -1,2 +1,5 @@
 # Local simulator models, radio settings, logs, and scripts persist on disk.
 /simulators/
+/build/
+/dist/
+__pycache__/
