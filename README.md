@@ -1,24 +1,6 @@
 # Ethos Themes
 Themes For Ethos system
 
-## Windows theme updater
-
-Open `dist/ThemeStudioForEthos.exe` to select themes and install them onto a
-USB-connected Ethos 26.x radio. The app has palette previews, a live transfer
-display and GitHub catalog refresh. New installs replace the previous theme
-package without retaining a backup. See [updater/README.md](updater/README.md)
-for usage and build instructions.
-
-The **Heli Model Wizard** option also installs the standalone package directly
-from [Ethos-RF-Model-Wizard](https://github.com/Harrykd33/Ethos-RF-Model-Wizard).
-It can be installed alone or alongside the selected themes.
-
-**Themes** and **Script Packages** have separate selection columns. The script
-list is owner-published through [script-packages.json](script-packages.json):
-update that file on public GitHub `main`, and users receive new script options
-with **Refresh GitHub** without an app update. Repository additions require
-GitHub write access; the app's user interface only selects and installs packages.
-
 ## FrSky simulator
 
 In VS Code, open Run and Debug and select **FrSky Simulator: Start / Restart**,
