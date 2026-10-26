@@ -1,0 +1,23 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "ethos.Start",
+      "type": "process",
+      "command": "${command:ethos.start}",
+      "problemMatcher": []
+    },
+    {
+      "label": "ethos.OpenControls",
+      "type": "process",
+      "command": "${command:ethos.openControls}",
+      "problemMatcher": []
+    },
+    {
+      "label": "ethos.SetSimulator",
+      "type": "process",
+      "command": "${command:ethos.setSimulator}",
+      "problemMatcher": []
+    }
+  ]
+}

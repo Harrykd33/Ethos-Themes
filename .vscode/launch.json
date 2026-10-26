@@ -1,0 +1,29 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "FrSky Simulator: Start / Restart",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/.vscode/scripts/simulator.py",
+      "console": "internalConsole",
+      "postDebugTask": "ethos.Start"
+    },
+    {
+      "name": "FrSky Simulator: Open Controls",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/.vscode/scripts/simulator.py",
+      "console": "internalConsole",
+      "postDebugTask": "ethos.OpenControls"
+    },
+    {
+      "name": "FrSky Simulator: Select Radio",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/.vscode/scripts/simulator.py",
+      "console": "internalConsole",
+      "postDebugTask": "ethos.SetSimulator"
+    }
+  ]
+}
