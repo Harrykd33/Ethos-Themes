@@ -27,7 +27,7 @@ local function init()
         BLACK                      -- TOPLCD_BGCOLOR (XE/S models)
         },
         --toolbarLogo = "none",
-        toolbarBackground = lcd.loadBitmap("toolbar-dracula-plain.png"),
+        toolbarBackground = "dark",
     })
     system.registerTheme({
         key = "Teal",
