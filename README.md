@@ -29,3 +29,8 @@ Select a theme under **System > General > Theme**.
 All three include a centered Kevin D RC logo in a 784 x 50 toolbar header.
 The supplied transparent logo is preserved, with palette stripes along the
 bottom. Text and alert colors use contrasting shades for readability.
+
+Additional Kevin D RC themes: **Electric Freedom**, **4 Color Rainbow**,
+**Dusty Bright**, **Neonish**, **Happy Happy**, and **Diwali Celebration**.
+These use the same original logo and palette-striped header treatment.
+See `previews/kevindrc-six-palette-themes.png` for a color and header preview.

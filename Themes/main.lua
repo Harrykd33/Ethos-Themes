@@ -732,6 +732,198 @@ local function init()
         toolbarLogo = "none",
     })
 
+    -- Electric Freedom: colors from the supplied palette, with contrasting text and alerts.
+    system.registerTheme({
+        key = "ElecFre",
+        name = "Electric Freedom",
+        darkMode = true,
+        roundButtons = false,
+        focusStyle = "invert",
+        borderWidth = 3,
+        colors = {
+            lcd.RGB(0xFF, 0xFF, 0xFF), -- PRIMARY_COLOR
+            lcd.RGB(0x14, 0x24, 0x5A), -- SECONDARY_BGCOLOR
+            lcd.RGB(0x00, 0xCE, 0xD1), -- HIGHLIGHT_COLOR
+            lcd.RGB(0x06, 0x1C, 0x29), -- HIGHLIGHT_INVERT_COLOR
+            lcd.RGB(0x95, 0x89, 0xB0), -- DISABLE_COLOR
+            lcd.RGB(0x0A, 0x13, 0x38), -- PRIMARY_BGCOLOR
+            lcd.RGB(0x00, 0x00, 0x00), -- OVERLAY_COLOR
+            lcd.RGB(0x7D, 0xEA, 0xF0), -- SECONDARY_COLOR
+            lcd.RGB(0x9E, 0xE5, 0xAE), -- SAFE_COLOR
+            lcd.RGB(0x06, 0x0C, 0x26), -- PAGE_BGCOLOR
+            lcd.RGB(0xFF, 0xA4, 0xAC), -- ERROR_COLOR
+            lcd.RGB(0xFF, 0xFF, 0x00), -- ACTIVE_COLOR
+            lcd.RGB(0xB9, 0xAD, 0xCF), -- INACTIVE_COLOR
+            lcd.RGB(0x00, 0xCE, 0xD1), -- BUTTON_BORDER_ACTIVE_COLOR
+            lcd.RGB(0xD0, 0x00, 0xF5), -- BUTTON_BORDER_COLOR
+            lcd.RGB(0xFF, 0xD0, 0x80), -- WARNING_COLOR
+            lcd.RGB(0x10, 0x2C, 0x1A), -- SAFE_CONTRASTING_COLOR
+            lcd.RGB(0x0A, 0x13, 0x38), -- TOPLCD_BGCOLOR
+        },
+        toolbarBackground = lcd.loadBitmap("header-electric-freedom.png"),
+        toolbarLogo = "none",
+    })
+
+    -- 4 Color Rainbow: colors from the supplied palette, with contrasting text and alerts.
+    system.registerTheme({
+        key = "FourRnb",
+        name = "4 Color Rainbow",
+        darkMode = true,
+        roundButtons = true,
+        focusStyle = "invert",
+        borderWidth = 3,
+        colors = {
+            lcd.RGB(0xFF, 0xFF, 0xFF), -- PRIMARY_COLOR
+            lcd.RGB(0x20, 0x1A, 0x72), -- SECONDARY_BGCOLOR
+            lcd.RGB(0xF2, 0xDE, 0x18), -- HIGHLIGHT_COLOR
+            lcd.RGB(0x1C, 0x19, 0x40), -- HIGHLIGHT_INVERT_COLOR
+            lcd.RGB(0x95, 0x89, 0xB0), -- DISABLE_COLOR
+            lcd.RGB(0x10, 0x10, 0x44), -- PRIMARY_BGCOLOR
+            lcd.RGB(0x00, 0x00, 0x00), -- OVERLAY_COLOR
+            lcd.RGB(0xFF, 0xF2, 0x8C), -- SECONDARY_COLOR
+            lcd.RGB(0x9E, 0xE5, 0xAE), -- SAFE_COLOR
+            lcd.RGB(0x09, 0x09, 0x2D), -- PAGE_BGCOLOR
+            lcd.RGB(0xFF, 0xA4, 0xAC), -- ERROR_COLOR
+            lcd.RGB(0x62, 0xE8, 0x62), -- ACTIVE_COLOR
+            lcd.RGB(0xB9, 0xAD, 0xCF), -- INACTIVE_COLOR
+            lcd.RGB(0xF2, 0xDE, 0x18), -- BUTTON_BORDER_ACTIVE_COLOR
+            lcd.RGB(0x20, 0xBC, 0x20), -- BUTTON_BORDER_COLOR
+            lcd.RGB(0xFF, 0xD0, 0x80), -- WARNING_COLOR
+            lcd.RGB(0x10, 0x2C, 0x1A), -- SAFE_CONTRASTING_COLOR
+            lcd.RGB(0x10, 0x10, 0x44), -- TOPLCD_BGCOLOR
+        },
+        toolbarBackground = lcd.loadBitmap("header-4-color-rainbow.png"),
+        toolbarLogo = "none",
+    })
+
+    -- Dusty Bright: colors from the supplied palette, with contrasting text and alerts.
+    system.registerTheme({
+        key = "DustBrt",
+        name = "Dusty Bright",
+        darkMode = false,
+        roundButtons = true,
+        focusStyle = "invert",
+        borderWidth = 3,
+        colors = {
+            lcd.RGB(0x35, 0x1B, 0x43), -- PRIMARY_COLOR
+            lcd.RGB(0xF7, 0xD8, 0xAC), -- SECONDARY_BGCOLOR
+            lcd.RGB(0x46, 0x1E, 0x6A), -- HIGHLIGHT_COLOR
+            lcd.RGB(0xFF, 0xFF, 0xFF), -- HIGHLIGHT_INVERT_COLOR
+            lcd.RGB(0x8F, 0x80, 0x61), -- DISABLE_COLOR
+            lcd.RGB(0xFF, 0xF4, 0xE5), -- PRIMARY_BGCOLOR
+            lcd.RGB(0x00, 0x00, 0x00), -- OVERLAY_COLOR
+            lcd.RGB(0x74, 0x21, 0x3F), -- SECONDARY_COLOR
+            lcd.RGB(0x24, 0x60, 0x3D), -- SAFE_COLOR
+            lcd.RGB(0xFF, 0xFB, 0xF4), -- PAGE_BGCOLOR
+            lcd.RGB(0xA0, 0x14, 0x2B), -- ERROR_COLOR
+            lcd.RGB(0x81, 0x13, 0x44), -- ACTIVE_COLOR
+            lcd.RGB(0x71, 0x64, 0x43), -- INACTIVE_COLOR
+            lcd.RGB(0x46, 0x1E, 0x6A), -- BUTTON_BORDER_ACTIVE_COLOR
+            lcd.RGB(0x38, 0xA5, 0xAD), -- BUTTON_BORDER_COLOR
+            lcd.RGB(0x78, 0x40, 0x00), -- WARNING_COLOR
+            lcd.RGB(0xFF, 0xFF, 0xFF), -- SAFE_CONTRASTING_COLOR
+            lcd.RGB(0xFF, 0xF4, 0xE5), -- TOPLCD_BGCOLOR
+        },
+        toolbarBackground = lcd.loadBitmap("header-dusty-bright.png"),
+        toolbarLogo = "none",
+    })
+
+    -- Neonish: colors from the supplied palette, with contrasting text and alerts.
+    system.registerTheme({
+        key = "Neonish",
+        name = "Neonish",
+        darkMode = true,
+        roundButtons = true,
+        focusStyle = "invert",
+        borderWidth = 3,
+        colors = {
+            lcd.RGB(0xFF, 0xF9, 0xFF), -- PRIMARY_COLOR
+            lcd.RGB(0x33, 0x18, 0x87), -- SECONDARY_BGCOLOR
+            lcd.RGB(0x1B, 0xBF, 0xE1), -- HIGHLIGHT_COLOR
+            lcd.RGB(0x10, 0x1B, 0x36), -- HIGHLIGHT_INVERT_COLOR
+            lcd.RGB(0x95, 0x89, 0xB0), -- DISABLE_COLOR
+            lcd.RGB(0x20, 0x10, 0x48), -- PRIMARY_BGCOLOR
+            lcd.RGB(0x00, 0x00, 0x00), -- OVERLAY_COLOR
+            lcd.RGB(0xFF, 0xE2, 0x5D), -- SECONDARY_COLOR
+            lcd.RGB(0x9E, 0xE5, 0xAE), -- SAFE_COLOR
+            lcd.RGB(0x14, 0x0A, 0x32), -- PAGE_BGCOLOR
+            lcd.RGB(0xFF, 0xA4, 0xAC), -- ERROR_COLOR
+            lcd.RGB(0xF4, 0x55, 0xB4), -- ACTIVE_COLOR
+            lcd.RGB(0xB9, 0xAD, 0xCF), -- INACTIVE_COLOR
+            lcd.RGB(0x1B, 0xBF, 0xE1), -- BUTTON_BORDER_ACTIVE_COLOR
+            lcd.RGB(0x67, 0x48, 0xC2), -- BUTTON_BORDER_COLOR
+            lcd.RGB(0xFF, 0xD0, 0x80), -- WARNING_COLOR
+            lcd.RGB(0x10, 0x2C, 0x1A), -- SAFE_CONTRASTING_COLOR
+            lcd.RGB(0x20, 0x10, 0x48), -- TOPLCD_BGCOLOR
+        },
+        toolbarBackground = lcd.loadBitmap("header-neonish.png"),
+        toolbarLogo = "none",
+    })
+
+    -- Happy Happy: colors from the supplied palette, with contrasting text and alerts.
+    system.registerTheme({
+        key = "HappyHp",
+        name = "Happy Happy",
+        darkMode = false,
+        roundButtons = true,
+        focusStyle = "invert",
+        borderWidth = 3,
+        colors = {
+            lcd.RGB(0x34, 0x32, 0x08), -- PRIMARY_COLOR
+            lcd.RGB(0xED, 0xD5, 0x6C), -- SECONDARY_BGCOLOR
+            lcd.RGB(0x74, 0x70, 0x08), -- HIGHLIGHT_COLOR
+            lcd.RGB(0xFF, 0xFF, 0xFF), -- HIGHLIGHT_INVERT_COLOR
+            lcd.RGB(0x8F, 0x80, 0x61), -- DISABLE_COLOR
+            lcd.RGB(0xFF, 0xF6, 0xCC), -- PRIMARY_BGCOLOR
+            lcd.RGB(0x00, 0x00, 0x00), -- OVERLAY_COLOR
+            lcd.RGB(0x62, 0x59, 0x09), -- SECONDARY_COLOR
+            lcd.RGB(0x24, 0x60, 0x3D), -- SAFE_COLOR
+            lcd.RGB(0xFF, 0xFC, 0xED), -- PAGE_BGCOLOR
+            lcd.RGB(0xA0, 0x14, 0x2B), -- ERROR_COLOR
+            lcd.RGB(0xA3, 0x3F, 0x00), -- ACTIVE_COLOR
+            lcd.RGB(0x71, 0x64, 0x43), -- INACTIVE_COLOR
+            lcd.RGB(0x74, 0x70, 0x08), -- BUTTON_BORDER_ACTIVE_COLOR
+            lcd.RGB(0xA2, 0xA2, 0x00), -- BUTTON_BORDER_COLOR
+            lcd.RGB(0x78, 0x40, 0x00), -- WARNING_COLOR
+            lcd.RGB(0xFF, 0xFF, 0xFF), -- SAFE_CONTRASTING_COLOR
+            lcd.RGB(0xFF, 0xF6, 0xCC), -- TOPLCD_BGCOLOR
+        },
+        toolbarBackground = lcd.loadBitmap("header-happy-happy.png"),
+        toolbarLogo = "none",
+    })
+
+    -- Diwali Celebration: colors from the supplied palette, with contrasting text and alerts.
+    system.registerTheme({
+        key = "DiwaliC",
+        name = "Diwali Celebration",
+        darkMode = true,
+        roundButtons = false,
+        focusStyle = "invert",
+        borderWidth = 3,
+        colors = {
+            lcd.RGB(0xFF, 0xFF, 0xFF), -- PRIMARY_COLOR
+            lcd.RGB(0x47, 0x11, 0x67), -- SECONDARY_BGCOLOR
+            lcd.RGB(0xF1, 0xDF, 0x00), -- HIGHLIGHT_COLOR
+            lcd.RGB(0x28, 0x11, 0x3B), -- HIGHLIGHT_INVERT_COLOR
+            lcd.RGB(0x95, 0x89, 0xB0), -- DISABLE_COLOR
+            lcd.RGB(0x21, 0x0A, 0x3D), -- PRIMARY_BGCOLOR
+            lcd.RGB(0x00, 0x00, 0x00), -- OVERLAY_COLOR
+            lcd.RGB(0xFF, 0xB5, 0xDD), -- SECONDARY_COLOR
+            lcd.RGB(0x9E, 0xE5, 0xAE), -- SAFE_COLOR
+            lcd.RGB(0x16, 0x05, 0x2B), -- PAGE_BGCOLOR
+            lcd.RGB(0xFF, 0xA4, 0xAC), -- ERROR_COLOR
+            lcd.RGB(0xFF, 0x79, 0xBE), -- ACTIVE_COLOR
+            lcd.RGB(0xB9, 0xAD, 0xCF), -- INACTIVE_COLOR
+            lcd.RGB(0xF1, 0xDF, 0x00), -- BUTTON_BORDER_ACTIVE_COLOR
+            lcd.RGB(0xF1, 0x2F, 0x94), -- BUTTON_BORDER_COLOR
+            lcd.RGB(0xFF, 0xD0, 0x80), -- WARNING_COLOR
+            lcd.RGB(0x10, 0x2C, 0x1A), -- SAFE_CONTRASTING_COLOR
+            lcd.RGB(0x21, 0x0A, 0x3D), -- TOPLCD_BGCOLOR
+        },
+        toolbarBackground = lcd.loadBitmap("header-diwali-celebration.png"),
+        toolbarLogo = "none",
+    })
+
 end
 
 return {

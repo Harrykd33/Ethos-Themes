@@ -12,6 +12,20 @@ high and centered directly, preserving the original brand artwork.
 Source: user-supplied `kevindrc logo.png`.
 
 ## Initial prompt set
+The six additional palette headers extend the existing logo treatment directly
+with ImageMagick; no generated replacement logo is used. Each uses the original
+transparent logo at 44 pixels high, a solid palette background and a two-pixel
+stripe containing every supplied palette color.
+
+| Theme | Header background | Palette |
+| --- | --- | --- |
+| Electric Freedom | #0030C8 | #CC0000, #00CED1, #FFFF00, #D000F5, #0030C8 |
+| 4 Color Rainbow | #1000CC | #1000CC, #20BC20, #F2DE18, #FF2D21 |
+| Dusty Bright | #38A5AD | #38A5AD, #F5A03E, #EC3C3D, #811344, #461E6A |
+| Neonish | #331887 | #1BBFE1, #FFE25D, #F455B4, #6748C2, #331887 |
+| Happy Happy | #EDD56C | #747008, #A2A200, #EDD56C, #F18418, #C90012 |
+| Diwali Celebration | #9000B9 | #9000B9, #F12F94, #F1DF00, #1C28DF |
+
 
 ### polaroid-twilight
 
