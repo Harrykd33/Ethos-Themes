@@ -58,7 +58,7 @@ local function init()
             WHITE,                     -- TOPLCD_BGCOLOR (XE/S)
         },
         toolbarLogo = "none",
-        toolbarBackground = lcd.loadBitmap("teal1.5.png"),
+        toolbarBackground = lcd.loadBitmap("header-teal.png"),
     })
    system.registerTheme({
     key = "PUIMA",
@@ -88,7 +88,7 @@ local function init()
         BLACK,                     -- TOPLCD_BGCOLOR (XE/S)
         },
         toolbarLogo ="none",
-        toolbarBackground = lcd.loadBitmap("purfs.png")
+        toolbarBackground = lcd.loadBitmap("header-pu-rfs.png")
     })
     system.registerTheme({
         key = "Ocean",
@@ -148,7 +148,7 @@ local function init()
         BLACK,                     -- TOPLCD_BGCOLOR (XE/S)
         },
         toolbarLogo ="none",
-        toolbarBackground = lcd.loadBitmap("blueslogo1.png")
+        toolbarBackground = lcd.loadBitmap("header-blu-rfs.png")
     }) 
      system.registerTheme({
     key = "yello",
@@ -178,7 +178,7 @@ local function init()
         BLACK,                     -- TOPLCD_BGCOLOR (XE/S)
         },
         toolbarLogo ="none",
-        toolbarBackground = lcd.loadBitmap("yelo.png")
+        toolbarBackground = lcd.loadBitmap("header-yelo-rfs.png")
     }) 
     -- Cyberpunk: neon accents on deep indigo, with independent alert colors.
     system.registerTheme({
@@ -442,6 +442,198 @@ local function init()
         toolbarBackground = lcd.loadBitmap("header-velvet-orbit.png"),
         toolbarLogo = "none",
 
+    })
+
+    -- Solar Ink: Sunlit yellow, carbon lettering and bold black controls.
+    system.registerTheme({
+        key = "SolarIk",
+        name = "Solar Ink",
+        darkMode = false,
+        roundButtons = false,
+        focusStyle = "invert",
+        borderWidth = 4,
+        colors = {
+            lcd.RGB(0x14, 0x14, 0x00), -- PRIMARY_COLOR
+            lcd.RGB(0xFF, 0xF0, 0x9A), -- SECONDARY_BGCOLOR
+            lcd.RGB(0x14, 0x14, 0x00), -- HIGHLIGHT_COLOR
+            lcd.RGB(0xFF, 0xF7, 0xCE), -- HIGHLIGHT_INVERT_COLOR
+            lcd.RGB(0x6E, 0x65, 0x0C), -- DISABLE_COLOR
+            lcd.RGB(0xFF, 0xF9, 0xD9), -- PRIMARY_BGCOLOR
+            lcd.RGB(0x00, 0x00, 0x00), -- OVERLAY_COLOR
+            lcd.RGB(0x49, 0x38, 0x00), -- SECONDARY_COLOR
+            lcd.RGB(0x17, 0x4C, 0x25), -- SAFE_COLOR
+            lcd.RGB(0xFF, 0xFE, 0xF0), -- PAGE_BGCOLOR
+            lcd.RGB(0x8E, 0x08, 0x20), -- ERROR_COLOR
+            lcd.RGB(0x14, 0x14, 0x00), -- ACTIVE_COLOR
+            lcd.RGB(0x51, 0x4A, 0x14), -- INACTIVE_COLOR
+            lcd.RGB(0x14, 0x14, 0x00), -- BUTTON_BORDER_ACTIVE_COLOR
+            lcd.RGB(0x62, 0x54, 0x00), -- BUTTON_BORDER_COLOR
+            lcd.RGB(0x66, 0x38, 0x00), -- WARNING_COLOR
+            lcd.RGB(0xFF, 0xFF, 0xFF), -- SAFE_CONTRASTING_COLOR
+            lcd.RGB(0xFF, 0xF0, 0x9A), -- TOPLCD_BGCOLOR
+        },
+        toolbarBackground = lcd.loadBitmap("header-solar-ink.png"),
+        toolbarLogo = "none",
+    })
+
+    -- Glacier Signal: Polar white, ice-blue panels and deep naval blue, with burnt-orange status accents.
+    system.registerTheme({
+        key = "GlacSig",
+        name = "Glacier Signal",
+        darkMode = false,
+        roundButtons = false,
+        focusStyle = "invert",
+        borderWidth = 4,
+        colors = {
+            lcd.RGB(0x07, 0x1D, 0x38), -- PRIMARY_COLOR
+            lcd.RGB(0xD7, 0xED, 0xFF), -- SECONDARY_BGCOLOR
+            lcd.RGB(0x00, 0x3B, 0x78), -- HIGHLIGHT_COLOR
+            lcd.RGB(0xFF, 0xFF, 0xFF), -- HIGHLIGHT_INVERT_COLOR
+            lcd.RGB(0x62, 0x70, 0x80), -- DISABLE_COLOR
+            lcd.RGB(0xF5, 0xFA, 0xFF), -- PRIMARY_BGCOLOR
+            lcd.RGB(0x00, 0x00, 0x00), -- OVERLAY_COLOR
+            lcd.RGB(0x17, 0x34, 0x51), -- SECONDARY_COLOR
+            lcd.RGB(0x14, 0x50, 0x2A), -- SAFE_COLOR
+            lcd.RGB(0xFF, 0xFF, 0xFF), -- PAGE_BGCOLOR
+            lcd.RGB(0x93, 0x0E, 0x22), -- ERROR_COLOR
+            lcd.RGB(0x00, 0x3B, 0x78), -- ACTIVE_COLOR
+            lcd.RGB(0x34, 0x4C, 0x61), -- INACTIVE_COLOR
+            lcd.RGB(0x00, 0x3B, 0x78), -- BUTTON_BORDER_ACTIVE_COLOR
+            lcd.RGB(0x4C, 0x63, 0x79), -- BUTTON_BORDER_COLOR
+            lcd.RGB(0x80, 0x34, 0x00), -- WARNING_COLOR
+            lcd.RGB(0xFF, 0xFF, 0xFF), -- SAFE_CONTRASTING_COLOR
+            lcd.RGB(0xD7, 0xED, 0xFF), -- TOPLCD_BGCOLOR
+        },
+        toolbarBackground = lcd.loadBitmap("header-glacier-signal.png"),
+        toolbarLogo = "none",
+    })
+
+    -- Cherry Press: Fresh newsprint and cherry-blossom panels with heavy burgundy selections.
+    system.registerTheme({
+        key = "ChryPrs",
+        name = "Cherry Press",
+        darkMode = false,
+        roundButtons = true,
+        focusStyle = "invert",
+        borderWidth = 4,
+        colors = {
+            lcd.RGB(0x2A, 0x08, 0x18), -- PRIMARY_COLOR
+            lcd.RGB(0xFF, 0xDD, 0xE8), -- SECONDARY_BGCOLOR
+            lcd.RGB(0x80, 0x0B, 0x39), -- HIGHLIGHT_COLOR
+            lcd.RGB(0xFF, 0xFF, 0xFF), -- HIGHLIGHT_INVERT_COLOR
+            lcd.RGB(0x84, 0x61, 0x6F), -- DISABLE_COLOR
+            lcd.RGB(0xFF, 0xF7, 0xFA), -- PRIMARY_BGCOLOR
+            lcd.RGB(0x00, 0x00, 0x00), -- OVERLAY_COLOR
+            lcd.RGB(0x54, 0x20, 0x36), -- SECONDARY_COLOR
+            lcd.RGB(0x20, 0x49, 0x25), -- SAFE_COLOR
+            lcd.RGB(0xFF, 0xFF, 0xFF), -- PAGE_BGCOLOR
+            lcd.RGB(0x92, 0x0B, 0x16), -- ERROR_COLOR
+            lcd.RGB(0x80, 0x0B, 0x39), -- ACTIVE_COLOR
+            lcd.RGB(0x63, 0x34, 0x47), -- INACTIVE_COLOR
+            lcd.RGB(0x80, 0x0B, 0x39), -- BUTTON_BORDER_ACTIVE_COLOR
+            lcd.RGB(0x8A, 0x48, 0x62), -- BUTTON_BORDER_COLOR
+            lcd.RGB(0x70, 0x33, 0x00), -- WARNING_COLOR
+            lcd.RGB(0xFF, 0xFF, 0xFF), -- SAFE_CONTRASTING_COLOR
+            lcd.RGB(0xFF, 0xDD, 0xE8), -- TOPLCD_BGCOLOR
+        },
+        toolbarBackground = lcd.loadBitmap("header-cherry-press.png"),
+        toolbarLogo = "none",
+    })
+
+    -- Lime Voltage: Acid-lime panels, chalk-white pages and indigo controls inspired by racing instruments.
+    system.registerTheme({
+        key = "LimeVlt",
+        name = "Lime Voltage",
+        darkMode = false,
+        roundButtons = false,
+        focusStyle = "invert",
+        borderWidth = 4,
+        colors = {
+            lcd.RGB(0x11, 0x20, 0x00), -- PRIMARY_COLOR
+            lcd.RGB(0xE3, 0xF5, 0xAB), -- SECONDARY_BGCOLOR
+            lcd.RGB(0x20, 0x31, 0x78), -- HIGHLIGHT_COLOR
+            lcd.RGB(0xFF, 0xFF, 0xFF), -- HIGHLIGHT_INVERT_COLOR
+            lcd.RGB(0x61, 0x70, 0x3C), -- DISABLE_COLOR
+            lcd.RGB(0xF7, 0xFC, 0xE9), -- PRIMARY_BGCOLOR
+            lcd.RGB(0x00, 0x00, 0x00), -- OVERLAY_COLOR
+            lcd.RGB(0x28, 0x3C, 0x13), -- SECONDARY_COLOR
+            lcd.RGB(0x16, 0x4A, 0x28), -- SAFE_COLOR
+            lcd.RGB(0xFF, 0xFF, 0xFF), -- PAGE_BGCOLOR
+            lcd.RGB(0x92, 0x0C, 0x24), -- ERROR_COLOR
+            lcd.RGB(0x20, 0x31, 0x78), -- ACTIVE_COLOR
+            lcd.RGB(0x3D, 0x50, 0x24), -- INACTIVE_COLOR
+            lcd.RGB(0x20, 0x31, 0x78), -- BUTTON_BORDER_ACTIVE_COLOR
+            lcd.RGB(0x54, 0x65, 0x2D), -- BUTTON_BORDER_COLOR
+            lcd.RGB(0x66, 0x38, 0x00), -- WARNING_COLOR
+            lcd.RGB(0xFF, 0xFF, 0xFF), -- SAFE_CONTRASTING_COLOR
+            lcd.RGB(0xE3, 0xF5, 0xAB), -- TOPLCD_BGCOLOR
+        },
+        toolbarBackground = lcd.loadBitmap("header-lime-voltage.png"),
+        toolbarLogo = "none",
+    })
+
+    -- Carbon Beacon: Pitch black and graphite with beacon-yellow focus and white-hot lettering.
+    system.registerTheme({
+        key = "CarbBcn",
+        name = "Carbon Beacon",
+        darkMode = true,
+        roundButtons = false,
+        focusStyle = "invert",
+        borderWidth = 4,
+        colors = {
+            lcd.RGB(0xFF, 0xFF, 0xFF), -- PRIMARY_COLOR
+            lcd.RGB(0x24, 0x24, 0x24), -- SECONDARY_BGCOLOR
+            lcd.RGB(0xFF, 0xE0, 0x52), -- HIGHLIGHT_COLOR
+            lcd.RGB(0x10, 0x10, 0x10), -- HIGHLIGHT_INVERT_COLOR
+            lcd.RGB(0x8D, 0x8D, 0x8D), -- DISABLE_COLOR
+            lcd.RGB(0x08, 0x08, 0x08), -- PRIMARY_BGCOLOR
+            lcd.RGB(0x00, 0x00, 0x00), -- OVERLAY_COLOR
+            lcd.RGB(0xEB, 0xE2, 0xC5), -- SECONDARY_COLOR
+            lcd.RGB(0xA7, 0xFF, 0x91), -- SAFE_COLOR
+            lcd.RGB(0x00, 0x00, 0x00), -- PAGE_BGCOLOR
+            lcd.RGB(0xFF, 0x9F, 0xA7), -- ERROR_COLOR
+            lcd.RGB(0xFF, 0xE0, 0x52), -- ACTIVE_COLOR
+            lcd.RGB(0xB8, 0xB8, 0xB8), -- INACTIVE_COLOR
+            lcd.RGB(0xFF, 0xE0, 0x52), -- BUTTON_BORDER_ACTIVE_COLOR
+            lcd.RGB(0x8B, 0x8B, 0x8B), -- BUTTON_BORDER_COLOR
+            lcd.RGB(0xFF, 0xD1, 0x96), -- WARNING_COLOR
+            lcd.RGB(0x10, 0x1B, 0x0C), -- SAFE_CONTRASTING_COLOR
+            lcd.RGB(0x08, 0x08, 0x08), -- TOPLCD_BGCOLOR
+        },
+        toolbarBackground = lcd.loadBitmap("header-carbon-beacon.png"),
+        toolbarLogo = "none",
+    })
+
+    -- Arctic Radar: A deep polar cockpit with luminous cyan controls and lime radar status.
+    system.registerTheme({
+        key = "ArctRdr",
+        name = "Arctic Radar",
+        darkMode = true,
+        roundButtons = true,
+        focusStyle = "invert",
+        borderWidth = 4,
+        colors = {
+            lcd.RGB(0xED, 0xFF, 0xFF), -- PRIMARY_COLOR
+            lcd.RGB(0x10, 0x2A, 0x36), -- SECONDARY_BGCOLOR
+            lcd.RGB(0x70, 0xF3, 0xFF), -- HIGHLIGHT_COLOR
+            lcd.RGB(0x00, 0x15, 0x1B), -- HIGHLIGHT_INVERT_COLOR
+            lcd.RGB(0x7D, 0x9A, 0xA5), -- DISABLE_COLOR
+            lcd.RGB(0x04, 0x10, 0x19), -- PRIMARY_BGCOLOR
+            lcd.RGB(0x00, 0x00, 0x00), -- OVERLAY_COLOR
+            lcd.RGB(0xB8, 0xE5, 0xF0), -- SECONDARY_COLOR
+            lcd.RGB(0xC4, 0xFF, 0x87), -- SAFE_COLOR
+            lcd.RGB(0x01, 0x08, 0x0D), -- PAGE_BGCOLOR
+            lcd.RGB(0xFF, 0xAD, 0xB8), -- ERROR_COLOR
+            lcd.RGB(0x70, 0xF3, 0xFF), -- ACTIVE_COLOR
+            lcd.RGB(0xA0, 0xC0, 0xCA), -- INACTIVE_COLOR
+            lcd.RGB(0x70, 0xF3, 0xFF), -- BUTTON_BORDER_ACTIVE_COLOR
+            lcd.RGB(0x64, 0x8A, 0x99), -- BUTTON_BORDER_COLOR
+            lcd.RGB(0xFF, 0xD8, 0xA1), -- WARNING_COLOR
+            lcd.RGB(0x13, 0x20, 0x00), -- SAFE_CONTRASTING_COLOR
+            lcd.RGB(0x04, 0x10, 0x19), -- TOPLCD_BGCOLOR
+        },
+        toolbarBackground = lcd.loadBitmap("header-arctic-radar.png"),
+        toolbarLogo = "none",
     })
 
 end
