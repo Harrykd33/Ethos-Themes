@@ -1,9 +1,12 @@
 # Rotorflight theme headers
 
-All 20 active themes use the flat centered ROTORFLIGHT wordmark and helicopter
+The original 20 themes use the flat centered ROTORFLIGHT wordmark and helicopter
 outline style from `yelo.png`. The Yelo Rfs header is an unchanged copy of that
 reference, saved as `header-yelo-rfs.png`. The other 19 palette variants were
 created with the built-in image generation tool.
+
+The three Kevin D RC palette themes use separate header artwork documented in
+`kevindrc-header-prompts.md`.
 
 Final files are `Themes/header-{slug}.png`, each 784 x 50 pixels. Generated
 padding is removed, and the logo is fitted proportionally into a centered

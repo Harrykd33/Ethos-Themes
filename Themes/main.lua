@@ -636,6 +636,102 @@ local function init()
         toolbarLogo = "none",
     })
 
+    -- Polaroid Twilight: violet, orchid, cream, honey and muted coral.
+    system.registerTheme({
+        key = "PolTwlt",
+        name = "Polaroid Twilight",
+        darkMode = true,
+        roundButtons = true,
+        focusStyle = "invert",
+        borderWidth = 3,
+        colors = {
+            lcd.RGB(0xFF, 0xFA, 0xE9), -- PRIMARY_COLOR
+            lcd.RGB(0x58, 0x4C, 0x9E), -- SECONDARY_BGCOLOR: palette violet
+            lcd.RGB(0xDC, 0x78, 0xD9), -- HIGHLIGHT_COLOR: orchid
+            lcd.RGB(0x27, 0x1B, 0x3F), -- HIGHLIGHT_INVERT_COLOR
+            lcd.RGB(0xA1, 0x92, 0xB8), -- DISABLE_COLOR
+            lcd.RGB(0x30, 0x27, 0x50), -- PRIMARY_BGCOLOR: deep violet
+            lcd.RGB(0x00, 0x00, 0x00), -- OVERLAY_COLOR
+            lcd.RGB(0xEE, 0xE1, 0xA2), -- SECONDARY_COLOR: cream
+            lcd.RGB(0xAD, 0xE6, 0xB2), -- SAFE_COLOR
+            lcd.RGB(0x24, 0x1D, 0x3B), -- PAGE_BGCOLOR
+            lcd.RGB(0xFF, 0xA2, 0xA5), -- ERROR_COLOR: readable coral
+            lcd.RGB(0xE3, 0xAA, 0x50), -- ACTIVE_COLOR: honey
+            lcd.RGB(0xBD, 0xAC, 0xCC), -- INACTIVE_COLOR
+            lcd.RGB(0xDC, 0x78, 0xD9), -- BUTTON_BORDER_ACTIVE_COLOR
+            lcd.RGB(0xCB, 0x5C, 0x5D), -- BUTTON_BORDER_COLOR: muted coral
+            lcd.RGB(0xFF, 0xCF, 0x7D), -- WARNING_COLOR
+            lcd.RGB(0x18, 0x2B, 0x1B), -- SAFE_CONTRASTING_COLOR
+            lcd.RGB(0x30, 0x27, 0x50), -- TOPLCD_BGCOLOR
+        },
+        toolbarBackground = lcd.loadBitmap("header-polaroid-twilight.png"),
+        toolbarLogo = "none",
+    })
+
+    -- Sunflare Dusk: saturated orange and gold over a deep ultramarine base.
+    system.registerTheme({
+        key = "SunDusk",
+        name = "Sunflare Dusk",
+        darkMode = true,
+        roundButtons = false,
+        focusStyle = "invert",
+        borderWidth = 3,
+        colors = {
+            lcd.RGB(0xFF, 0xFA, 0xDE), -- PRIMARY_COLOR
+            lcd.RGB(0x11, 0x11, 0x94), -- SECONDARY_BGCOLOR: ultramarine
+            lcd.RGB(0xE4, 0xB9, 0x00), -- HIGHLIGHT_COLOR: gold
+            lcd.RGB(0x10, 0x13, 0x42), -- HIGHLIGHT_INVERT_COLOR
+            lcd.RGB(0x8B, 0x94, 0xC7), -- DISABLE_COLOR
+            lcd.RGB(0x12, 0x1A, 0x50), -- PRIMARY_BGCOLOR
+            lcd.RGB(0x00, 0x00, 0x00), -- OVERLAY_COLOR
+            lcd.RGB(0xF3, 0xE7, 0x85), -- SECONDARY_COLOR: pale yellow
+            lcd.RGB(0x9D, 0xEB, 0xAE), -- SAFE_COLOR
+            lcd.RGB(0x0B, 0x10, 0x35), -- PAGE_BGCOLOR
+            lcd.RGB(0xFF, 0xA1, 0xA8), -- ERROR_COLOR
+            lcd.RGB(0xEA, 0x5A, 0x00), -- ACTIVE_COLOR: orange
+            lcd.RGB(0xA5, 0xB5, 0xDA), -- INACTIVE_COLOR
+            lcd.RGB(0xE4, 0xB9, 0x00), -- BUTTON_BORDER_ACTIVE_COLOR
+            lcd.RGB(0x2A, 0x70, 0xCE), -- BUTTON_BORDER_COLOR: blue
+            lcd.RGB(0xFF, 0xC0, 0x75), -- WARNING_COLOR
+            lcd.RGB(0x12, 0x2D, 0x1A), -- SAFE_CONTRASTING_COLOR
+            lcd.RGB(0x12, 0x1A, 0x50), -- TOPLCD_BGCOLOR
+        },
+        toolbarBackground = lcd.loadBitmap("header-sunflare-dusk.png"),
+        toolbarLogo = "none",
+    })
+
+    -- Soft Sunset Flame: coral and peach panels on warm cream and ivory.
+    system.registerTheme({
+        key = "SftSnst",
+        name = "Soft Sunset Flame",
+        darkMode = false,
+        roundButtons = true,
+        focusStyle = "invert",
+        borderWidth = 3,
+        colors = {
+            lcd.RGB(0x3C, 0x27, 0x28), -- PRIMARY_COLOR: warm charcoal
+            lcd.RGB(0xFF, 0xAA, 0x8E), -- SECONDARY_BGCOLOR: peach
+            lcd.RGB(0xF1, 0x7F, 0x74), -- HIGHLIGHT_COLOR: coral
+            lcd.RGB(0x3C, 0x20, 0x21), -- HIGHLIGHT_INVERT_COLOR
+            lcd.RGB(0x97, 0x79, 0x6C), -- DISABLE_COLOR
+            lcd.RGB(0xFF, 0xF7, 0xC7), -- PRIMARY_BGCOLOR: buttercream
+            lcd.RGB(0x3C, 0x27, 0x28), -- OVERLAY_COLOR
+            lcd.RGB(0x70, 0x3A, 0x33), -- SECONDARY_COLOR: terracotta ink
+            lcd.RGB(0x24, 0x63, 0x42), -- SAFE_COLOR
+            lcd.RGB(0xFF, 0xFE, 0xFA), -- PAGE_BGCOLOR: warm white
+            lcd.RGB(0x98, 0x18, 0x2B), -- ERROR_COLOR
+            lcd.RGB(0x8B, 0x36, 0x2F), -- ACTIVE_COLOR: deep coral
+            lcd.RGB(0x7C, 0x60, 0x55), -- INACTIVE_COLOR
+            lcd.RGB(0x8B, 0x36, 0x2F), -- BUTTON_BORDER_ACTIVE_COLOR
+            lcd.RGB(0xF8, 0xDD, 0x98), -- BUTTON_BORDER_COLOR: sand
+            lcd.RGB(0x7B, 0x43, 0x06), -- WARNING_COLOR
+            lcd.RGB(0xFF, 0xFF, 0xFF), -- SAFE_CONTRASTING_COLOR
+            lcd.RGB(0xFF, 0xF7, 0xC7), -- TOPLCD_BGCOLOR
+        },
+        toolbarBackground = lcd.loadBitmap("header-soft-sunset-flame.png"),
+        toolbarLogo = "none",
+    })
+
 end
 
 return {
