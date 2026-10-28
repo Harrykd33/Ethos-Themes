@@ -1182,6 +1182,198 @@ local function init()
     })
     -- END RC PILOT THEMES
 
+    -- XL Stratos 700: light silver, white and canopy red.
+    system.registerTheme({
+        key = "STR700",
+        name = "XL Stratos 700",
+        darkMode = false,
+        roundButtons = true,
+        focusStyle = "invert",
+        borderWidth = 3,
+        colors = {
+            lcd.RGB(0x35, 0x41, 0x50), -- PRIMARY_COLOR (slate text)
+            lcd.RGB(0xE0, 0xE5, 0xEB), -- SECONDARY_BGCOLOR (silver panels)
+            lcd.RGB(0xB8, 0x1E, 0x32), -- HIGHLIGHT_COLOR (canopy red)
+            lcd.RGB(0xFF, 0xFF, 0xFF), -- HIGHLIGHT_INVERT_COLOR
+            lcd.RGB(0x7C, 0x87, 0x94), -- DISABLE_COLOR
+            lcd.RGB(0xEC, 0xEF, 0xF2), -- PRIMARY_BGCOLOR (light grey)
+            lcd.RGB(0x82, 0x8D, 0x9B), -- OVERLAY_COLOR (slate, no black)
+            lcd.RGB(0x9F, 0x1A, 0x2E), -- SECONDARY_COLOR
+            lcd.RGB(0x8E, 0xD9, 0x9C), -- SAFE_COLOR (light green battery fill)
+            lcd.RGB(0xEC, 0xEF, 0xF2), -- PAGE_BGCOLOR (light grey)
+            lcd.RGB(0xB0, 0x1C, 0x30), -- ERROR_COLOR
+            lcd.RGB(0xB8, 0x1E, 0x32), -- ACTIVE_COLOR
+            lcd.RGB(0x65, 0x72, 0x82), -- INACTIVE_COLOR
+            lcd.RGB(0x70, 0x12, 0x22), -- BUTTON_BORDER_ACTIVE_COLOR (battery outline)
+            lcd.RGB(0x56, 0x64, 0x77), -- BUTTON_BORDER_COLOR
+            lcd.RGB(0x85, 0x4D, 0x0B), -- WARNING_COLOR
+            lcd.RGB(0x23, 0x55, 0x3A), -- SAFE_CONTRASTING_COLOR (dark green on light battery)
+            lcd.RGB(0xEC, 0xEF, 0xF2), -- TOPLCD_BGCOLOR
+        },
+        toolbarBackground = lcd.loadBitmap("header-stratos-700-xlpower.png"),
+        toolbarLogo = "none",
+    })
+
+    -- XL Stratos 700 Dark: charcoal grey with bright contrasting controls.
+    system.registerTheme({
+        key = "STR7DK",
+        name = "XL Stratos 700 Dark",
+        darkMode = true,
+        roundButtons = true,
+        focusStyle = "invert",
+        borderWidth = 3,
+        colors = {
+            lcd.RGB(0xF4, 0xF6, 0xF8), -- PRIMARY_COLOR
+            lcd.RGB(0x3D, 0x43, 0x4B), -- SECONDARY_BGCOLOR
+            lcd.RGB(0xFF, 0x92, 0x9F), -- HIGHLIGHT_COLOR
+            lcd.RGB(0x35, 0x20, 0x28), -- HIGHLIGHT_INVERT_COLOR
+            lcd.RGB(0x93, 0x9D, 0xAA), -- DISABLE_COLOR
+            lcd.RGB(0x27, 0x2B, 0x30), -- PRIMARY_BGCOLOR (matches header and page)
+            lcd.RGB(0x55, 0x5D, 0x68), -- OVERLAY_COLOR
+            lcd.RGB(0xFF, 0xBD, 0xC5), -- SECONDARY_COLOR
+            lcd.RGB(0x8E, 0xD9, 0x9C), -- SAFE_COLOR
+            lcd.RGB(0x27, 0x2B, 0x30), -- PAGE_BGCOLOR
+            lcd.RGB(0xFF, 0x9A, 0xAA), -- ERROR_COLOR
+            lcd.RGB(0xFF, 0x92, 0x9F), -- ACTIVE_COLOR
+            lcd.RGB(0xB3, 0xBD, 0xC9), -- INACTIVE_COLOR
+            lcd.RGB(0xE5, 0xEA, 0xF0), -- BUTTON_BORDER_ACTIVE_COLOR
+            lcd.RGB(0x87, 0x93, 0xA2), -- BUTTON_BORDER_COLOR
+            lcd.RGB(0xFF, 0xD0, 0x8A), -- WARNING_COLOR
+            lcd.RGB(0x23, 0x55, 0x3A), -- SAFE_CONTRASTING_COLOR
+            lcd.RGB(0x2E, 0x33, 0x39), -- TOPLCD_BGCOLOR
+        },
+        toolbarBackground = lcd.loadBitmap("header-xl-stratos-700-dark.png"),
+        toolbarLogo = "none",
+    })
+
+    -- XL Stratos 200: hot pink, neon yellow and silver canopy palette.
+    system.registerTheme({
+        key = "STR200",
+        name = "XL Stratos 200",
+        darkMode = false,
+        roundButtons = true,
+        focusStyle = "invert",
+        borderWidth = 3,
+        colors = {
+            lcd.RGB(0x35, 0x41, 0x50), -- PRIMARY_COLOR
+            lcd.RGB(0xDD, 0xE1, 0xE7), -- SECONDARY_BGCOLOR
+            lcd.RGB(0xB5, 0x00, 0x64), -- HIGHLIGHT_COLOR
+            lcd.RGB(0xFF, 0xFF, 0xFF), -- HIGHLIGHT_INVERT_COLOR
+            lcd.RGB(0x7C, 0x85, 0x93), -- DISABLE_COLOR
+            lcd.RGB(0xF4, 0xF5, 0xF7), -- PRIMARY_BGCOLOR
+            lcd.RGB(0x82, 0x8D, 0x9B), -- OVERLAY_COLOR
+            lcd.RGB(0xB5, 0x00, 0x64), -- SECONDARY_COLOR
+            lcd.RGB(0x8E, 0xD9, 0x9C), -- SAFE_COLOR
+            lcd.RGB(0xF4, 0xF5, 0xF7), -- PAGE_BGCOLOR
+            lcd.RGB(0xAE, 0x20, 0x38), -- ERROR_COLOR
+            lcd.RGB(0x68, 0x63, 0x00), -- ACTIVE_COLOR
+            lcd.RGB(0x65, 0x72, 0x82), -- INACTIVE_COLOR
+            lcd.RGB(0x8B, 0x00, 0x4D), -- BUTTON_BORDER_ACTIVE_COLOR
+            lcd.RGB(0x56, 0x64, 0x77), -- BUTTON_BORDER_COLOR
+            lcd.RGB(0x85, 0x4D, 0x0B), -- WARNING_COLOR
+            lcd.RGB(0x23, 0x55, 0x3A), -- SAFE_CONTRASTING_COLOR
+            lcd.RGB(0xF4, 0xF5, 0xF7), -- TOPLCD_BGCOLOR
+        },
+        toolbarBackground = lcd.loadBitmap("header-xl-stratos-200.png"),
+        toolbarLogo = "none",
+    })
+
+    -- XL Stratos 200 Dark: hot pink, neon yellow and silver canopy palette.
+    system.registerTheme({
+        key = "ST2DRK",
+        name = "XL Stratos 200 Dark",
+        darkMode = true,
+        roundButtons = true,
+        focusStyle = "invert",
+        borderWidth = 3,
+        colors = {
+            lcd.RGB(0xF4, 0xF6, 0xF8), -- PRIMARY_COLOR
+            lcd.RGB(0x3D, 0x43, 0x4B), -- SECONDARY_BGCOLOR
+            lcd.RGB(0xF2, 0xFF, 0x38), -- HIGHLIGHT_COLOR
+            lcd.RGB(0x30, 0x31, 0x26), -- HIGHLIGHT_INVERT_COLOR
+            lcd.RGB(0x93, 0x9D, 0xAA), -- DISABLE_COLOR
+            lcd.RGB(0x27, 0x2B, 0x30), -- PRIMARY_BGCOLOR
+            lcd.RGB(0x55, 0x5D, 0x68), -- OVERLAY_COLOR
+            lcd.RGB(0xFF, 0x8F, 0xC8), -- SECONDARY_COLOR
+            lcd.RGB(0x8E, 0xD9, 0x9C), -- SAFE_COLOR
+            lcd.RGB(0x27, 0x2B, 0x30), -- PAGE_BGCOLOR
+            lcd.RGB(0xFF, 0x9A, 0xAA), -- ERROR_COLOR
+            lcd.RGB(0xFF, 0x8F, 0xC8), -- ACTIVE_COLOR
+            lcd.RGB(0xB3, 0xBD, 0xC9), -- INACTIVE_COLOR
+            lcd.RGB(0xE5, 0xEA, 0xF0), -- BUTTON_BORDER_ACTIVE_COLOR
+            lcd.RGB(0x87, 0x93, 0xA2), -- BUTTON_BORDER_COLOR
+            lcd.RGB(0xFF, 0xD0, 0x8A), -- WARNING_COLOR
+            lcd.RGB(0x23, 0x55, 0x3A), -- SAFE_CONTRASTING_COLOR
+            lcd.RGB(0x27, 0x2B, 0x30), -- TOPLCD_BGCOLOR
+        },
+        toolbarBackground = lcd.loadBitmap("header-xl-stratos-200-dark.png"),
+        toolbarLogo = "none",
+    })
+
+    -- SAB IL Piuma: silver grey, blue and bright orange.
+    system.registerTheme({
+        key = "SABPUM",
+        name = "SAB IL Piuma",
+        darkMode = false,
+        roundButtons = true,
+        focusStyle = "invert",
+        borderWidth = 3,
+        colors = {
+            lcd.RGB(0x30, 0x42, 0x53), -- PRIMARY_COLOR
+            lcd.RGB(0xDC, 0xE2, 0xE9), -- SECONDARY_BGCOLOR
+            lcd.RGB(0x13, 0x5B, 0xA4), -- HIGHLIGHT_COLOR
+            lcd.RGB(0xFF, 0xFF, 0xFF), -- HIGHLIGHT_INVERT_COLOR
+            lcd.RGB(0x78, 0x84, 0x93), -- DISABLE_COLOR
+            lcd.RGB(0xEE, 0xF1, 0xF4), -- PRIMARY_BGCOLOR
+            lcd.RGB(0x82, 0x8D, 0x9B), -- OVERLAY_COLOR
+            lcd.RGB(0x13, 0x5B, 0xA4), -- SECONDARY_COLOR
+            lcd.RGB(0x8E, 0xD9, 0x9C), -- SAFE_COLOR
+            lcd.RGB(0xEE, 0xF1, 0xF4), -- PAGE_BGCOLOR
+            lcd.RGB(0xAE, 0x20, 0x38), -- ERROR_COLOR
+            lcd.RGB(0x13, 0x5B, 0xA4), -- ACTIVE_COLOR
+            lcd.RGB(0x65, 0x72, 0x82), -- INACTIVE_COLOR
+            lcd.RGB(0x15, 0x4D, 0x80), -- BUTTON_BORDER_ACTIVE_COLOR
+            lcd.RGB(0x56, 0x64, 0x77), -- BUTTON_BORDER_COLOR
+            lcd.RGB(0x85, 0x4D, 0x0B), -- WARNING_COLOR
+            lcd.RGB(0x1F, 0x3D, 0x2B), -- SAFE_CONTRASTING_COLOR
+            lcd.RGB(0xEE, 0xF1, 0xF4), -- TOPLCD_BGCOLOR
+        },
+        toolbarBackground = lcd.loadBitmap("header-sab-il-piuma.png"),
+        toolbarLogo = "none",
+    })
+
+    -- SAB IL Piuma Dark: silver grey, blue and bright orange.
+    system.registerTheme({
+        key = "SABPMD",
+        name = "SAB IL Piuma Dark",
+        darkMode = true,
+        roundButtons = true,
+        focusStyle = "invert",
+        borderWidth = 3,
+        colors = {
+            lcd.RGB(0xF1, 0xF5, 0xFA), -- PRIMARY_COLOR
+            lcd.RGB(0x3A, 0x45, 0x52), -- SECONDARY_BGCOLOR
+            lcd.RGB(0xFF, 0x8A, 0x24), -- HIGHLIGHT_COLOR
+            lcd.RGB(0x29, 0x2D, 0x33), -- HIGHLIGHT_INVERT_COLOR
+            lcd.RGB(0x98, 0xA5, 0xB5), -- DISABLE_COLOR
+            lcd.RGB(0x29, 0x2F, 0x37), -- PRIMARY_BGCOLOR
+            lcd.RGB(0x55, 0x61, 0x6F), -- OVERLAY_COLOR
+            lcd.RGB(0x9B, 0xCA, 0xFF), -- SECONDARY_COLOR
+            lcd.RGB(0x8E, 0xD9, 0x9C), -- SAFE_COLOR
+            lcd.RGB(0x29, 0x2F, 0x37), -- PAGE_BGCOLOR
+            lcd.RGB(0xFF, 0x9A, 0xAA), -- ERROR_COLOR
+            lcd.RGB(0x9B, 0xCA, 0xFF), -- ACTIVE_COLOR
+            lcd.RGB(0xB3, 0xBD, 0xC9), -- INACTIVE_COLOR
+            lcd.RGB(0xE8, 0xEE, 0xF5), -- BUTTON_BORDER_ACTIVE_COLOR
+            lcd.RGB(0x87, 0x97, 0xAA), -- BUTTON_BORDER_COLOR
+            lcd.RGB(0xFF, 0xD0, 0x8A), -- WARNING_COLOR
+            lcd.RGB(0x1F, 0x3D, 0x2B), -- SAFE_CONTRASTING_COLOR
+            lcd.RGB(0x29, 0x2F, 0x37), -- TOPLCD_BGCOLOR
+        },
+        toolbarBackground = lcd.loadBitmap("header-sab-il-piuma-dark.png"),
+        toolbarLogo = "none",
+    })
+
 end
 
 return {

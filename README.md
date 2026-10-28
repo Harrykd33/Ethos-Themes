@@ -20,6 +20,43 @@ simulator's `scripts/Themes/` folder before running its command. Compiled
 radios, run **FrSky Simulator: Start / Restart** (F5) to load the themes.
 Select a theme under **System > General > Theme**.
 
+## XL Stratos 700
+
+A light silver, white and red theme with the supplied helicopter image centered
+in its 784 x 50 header. The photo background is transparent, and the theme uses
+no black palette colors. A light green battery fill has dark green contrasting details, with a deep red
+outline against the supplied slate grey header. The page also uses a light grey background.
+See [the theme preview](previews/stratos-700-xlpower.png).
+Rebuild the header with `.vscode/scripts/build_stratos_header.ps1`.
+
+**XL Stratos 700 Dark** adds charcoal grey header and page backgrounds, bright
+text and coral controls, and a pale battery outline around the light green fill.
+See [the dark preview](previews/xl-stratos-700-dark.png).
+Rebuild with `.vscode/scripts/build_stratos_header.ps1 -Dark`.
+
+## XL Stratos 200
+
+**XL Stratos 200** and **XL Stratos 200 Dark** take hot pink, neon yellow and
+silver from the supplied canopy photo. Both feature the helicopter in a header
+that matches the page background, with pink/yellow trim, a light green battery
+and a contrasting outline. Headers are opaque RGB for consistent radio colors.
+
+See the [light preview](previews/xl-stratos-200.png) and
+[dark preview](previews/xl-stratos-200-dark.png).
+Rebuild using `.vscode/scripts/build_stratos_200_headers.ps1`, adding `-Dark`
+for the dark version.
+
+## SAB IL Piuma
+
+**SAB IL Piuma** and **SAB IL Piuma Dark** use light grey, blue and bright
+orange, with the supplied inverted-flight helicopter photo in both headers.
+Headers match their page backgrounds and use opaque RGB. Battery outlines and
+internal details use contrasting colors.
+See the [light preview](previews/sab-il-piuma.png) and
+[dark preview](previews/sab-il-piuma-dark.png).
+Rebuild with `.vscode/scripts/build_sab_piuma_headers.ps1`, adding `-Dark`
+for the dark version.
+
 ## Kevin D RC palette themes
 
 - **Polaroid Twilight**: deep violet, orchid, cream, honey and muted coral.
