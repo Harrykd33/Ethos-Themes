@@ -34,3 +34,26 @@ Additional Kevin D RC themes: **Electric Freedom**, **4 Color Rainbow**,
 **Dusty Bright**, **Neonish**, **Happy Happy**, and **Diwali Celebration**.
 These use the same original logo and palette-striped header treatment.
 See `previews/kevindrc-six-palette-themes.png` for a color and header preview.
+
+## RC Pilot palette themes
+
+Eight themes share an RC Pilot illustration adapted from the supplied artwork,
+with centered artwork and a palette stripe in each 784 x 50 toolbar header.
+Header backgrounds use each theme's background and panel colors, with no text:
+
+- **RC Pilot Rangoli**
+- **RC Pilot Electric**
+- **RC Pilot Steel**
+- **RC Pilot Rustic**
+- **RC Pilot Rainbow**
+- **RC Pilot Arctic**
+- **RC Pilot Heritage**
+- **RC Pilot Steel Day**
+
+The reference contains seven palettes; Steel Day is a light version of Steel
+Interface. Heritage is also light; the other six use dark backgrounds.
+See [the theme preview](previews/rc-pilot-themes.png).
+
+To rebuild these themes, run `python .vscode/scripts/build_rc_pilot.py`, then
+run `.vscode/scripts/build_rc_pilot_headers.ps1` in PowerShell. The palette
+manifest and header source artwork are kept in `previews/`.

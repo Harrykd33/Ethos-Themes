@@ -924,6 +924,264 @@ local function init()
         toolbarLogo = "none",
     })
 
+    -- BEGIN RC PILOT THEMES
+    -- RC Pilot Rangoli: Rangoli Spectrum.
+    system.registerTheme({
+        key = "RCP01",
+        name = "RC Pilot Rangoli",
+        darkMode = true,
+        roundButtons = true,
+        focusStyle = "invert",
+        borderWidth = 3,
+        colors = {
+            lcd.RGB(0xFF, 0xF8, 0xEB), -- PRIMARY_COLOR
+            lcd.RGB(0x30, 0x20, 0x5A), -- SECONDARY_BGCOLOR
+            lcd.RGB(0xF7, 0xC3, 0x13), -- HIGHLIGHT_COLOR
+            lcd.RGB(0x21, 0x10, 0x37), -- HIGHLIGHT_INVERT_COLOR
+            lcd.RGB(0x9D, 0x8E, 0xB7), -- DISABLE_COLOR
+            lcd.RGB(0x17, 0x0D, 0x39), -- PRIMARY_BGCOLOR
+            lcd.RGB(0x00, 0x00, 0x00), -- OVERLAY_COLOR
+            lcd.RGB(0xFF, 0xC9, 0xEB), -- SECONDARY_COLOR
+            lcd.RGB(0xA4, 0xE8, 0xB2), -- SAFE_COLOR
+            lcd.RGB(0x10, 0x10, 0x2B), -- PAGE_BGCOLOR
+            lcd.RGB(0xFF, 0xAD, 0xB5), -- ERROR_COLOR
+            lcd.RGB(0xED, 0x0B, 0x8E), -- ACTIVE_COLOR
+            lcd.RGB(0xC2, 0xC5, 0xD5), -- INACTIVE_COLOR
+            lcd.RGB(0xF7, 0xC3, 0x13), -- BUTTON_BORDER_ACTIVE_COLOR
+            lcd.RGB(0xA5, 0x00, 0xC5), -- BUTTON_BORDER_COLOR
+            lcd.RGB(0xFF, 0xD1, 0x8B), -- WARNING_COLOR
+            lcd.RGB(0x10, 0x26, 0x19), -- SAFE_CONTRASTING_COLOR
+            lcd.RGB(0x17, 0x0D, 0x39), -- TOPLCD_BGCOLOR
+        },
+        toolbarBackground = lcd.loadBitmap("header-rc-pilot-rangoli.png"),
+        toolbarLogo = "none",
+    })
+
+    -- RC Pilot Electric: Electric Freedom.
+    system.registerTheme({
+        key = "RCP02",
+        name = "RC Pilot Electric",
+        darkMode = true,
+        roundButtons = true,
+        focusStyle = "invert",
+        borderWidth = 3,
+        colors = {
+            lcd.RGB(0xFF, 0xFF, 0xFF), -- PRIMARY_COLOR
+            lcd.RGB(0x14, 0x26, 0x5A), -- SECONDARY_BGCOLOR
+            lcd.RGB(0x00, 0xCE, 0xD1), -- HIGHLIGHT_COLOR
+            lcd.RGB(0x06, 0x1C, 0x29), -- HIGHLIGHT_INVERT_COLOR
+            lcd.RGB(0x93, 0x9F, 0xC0), -- DISABLE_COLOR
+            lcd.RGB(0x09, 0x14, 0x35), -- PRIMARY_BGCOLOR
+            lcd.RGB(0x00, 0x00, 0x00), -- OVERLAY_COLOR
+            lcd.RGB(0xB8, 0xF4, 0xFF), -- SECONDARY_COLOR
+            lcd.RGB(0xA4, 0xE8, 0xB2), -- SAFE_COLOR
+            lcd.RGB(0x05, 0x0B, 0x22), -- PAGE_BGCOLOR
+            lcd.RGB(0xFF, 0xAD, 0xB5), -- ERROR_COLOR
+            lcd.RGB(0xFF, 0xFF, 0x00), -- ACTIVE_COLOR
+            lcd.RGB(0xC2, 0xC5, 0xD5), -- INACTIVE_COLOR
+            lcd.RGB(0x00, 0xCE, 0xD1), -- BUTTON_BORDER_ACTIVE_COLOR
+            lcd.RGB(0xD0, 0x00, 0xF5), -- BUTTON_BORDER_COLOR
+            lcd.RGB(0xFF, 0xD1, 0x8B), -- WARNING_COLOR
+            lcd.RGB(0x10, 0x26, 0x19), -- SAFE_CONTRASTING_COLOR
+            lcd.RGB(0x09, 0x14, 0x35), -- TOPLCD_BGCOLOR
+        },
+        toolbarBackground = lcd.loadBitmap("header-rc-pilot-electric.png"),
+        toolbarLogo = "none",
+    })
+
+    -- RC Pilot Steel: Steel Interface.
+    system.registerTheme({
+        key = "RCP03",
+        name = "RC Pilot Steel",
+        darkMode = true,
+        roundButtons = true,
+        focusStyle = "invert",
+        borderWidth = 3,
+        colors = {
+            lcd.RGB(0xFF, 0xFF, 0xFF), -- PRIMARY_COLOR
+            lcd.RGB(0x40, 0x51, 0x8C), -- SECONDARY_BGCOLOR
+            lcd.RGB(0xB6, 0x9D, 0x4F), -- HIGHLIGHT_COLOR
+            lcd.RGB(0x17, 0x1C, 0x2B), -- HIGHLIGHT_INVERT_COLOR
+            lcd.RGB(0xA0, 0xA7, 0xBD), -- DISABLE_COLOR
+            lcd.RGB(0x24, 0x26, 0x2D), -- PRIMARY_BGCOLOR
+            lcd.RGB(0x00, 0x00, 0x00), -- OVERLAY_COLOR
+            lcd.RGB(0xE6, 0xD4, 0x9A), -- SECONDARY_COLOR
+            lcd.RGB(0xA4, 0xE8, 0xB2), -- SAFE_COLOR
+            lcd.RGB(0x18, 0x1B, 0x22), -- PAGE_BGCOLOR
+            lcd.RGB(0xFF, 0xAD, 0xB5), -- ERROR_COLOR
+            lcd.RGB(0xC5, 0xC5, 0xC5), -- ACTIVE_COLOR
+            lcd.RGB(0xC2, 0xC5, 0xD5), -- INACTIVE_COLOR
+            lcd.RGB(0xB6, 0x9D, 0x4F), -- BUTTON_BORDER_ACTIVE_COLOR
+            lcd.RGB(0xB6, 0x9D, 0x4F), -- BUTTON_BORDER_COLOR
+            lcd.RGB(0xFF, 0xD1, 0x8B), -- WARNING_COLOR
+            lcd.RGB(0x10, 0x26, 0x19), -- SAFE_CONTRASTING_COLOR
+            lcd.RGB(0x24, 0x26, 0x2D), -- TOPLCD_BGCOLOR
+        },
+        toolbarBackground = lcd.loadBitmap("header-rc-pilot-steel.png"),
+        toolbarLogo = "none",
+    })
+
+    -- RC Pilot Rustic: Rustic Twilight.
+    system.registerTheme({
+        key = "RCP04",
+        name = "RC Pilot Rustic",
+        darkMode = true,
+        roundButtons = true,
+        focusStyle = "invert",
+        borderWidth = 3,
+        colors = {
+            lcd.RGB(0xFF, 0xF5, 0xE8), -- PRIMARY_COLOR
+            lcd.RGB(0x49, 0x47, 0x73), -- SECONDARY_BGCOLOR
+            lcd.RGB(0xCF, 0xB5, 0x9D), -- HIGHLIGHT_COLOR
+            lcd.RGB(0x2B, 0x19, 0x14), -- HIGHLIGHT_INVERT_COLOR
+            lcd.RGB(0xB8, 0xA1, 0x9B), -- DISABLE_COLOR
+            lcd.RGB(0x33, 0x20, 0x19), -- PRIMARY_BGCOLOR
+            lcd.RGB(0x00, 0x00, 0x00), -- OVERLAY_COLOR
+            lcd.RGB(0xEA, 0xD5, 0xC5), -- SECONDARY_COLOR
+            lcd.RGB(0xA4, 0xE8, 0xB2), -- SAFE_COLOR
+            lcd.RGB(0x24, 0x15, 0x11), -- PAGE_BGCOLOR
+            lcd.RGB(0xFF, 0xAD, 0xB5), -- ERROR_COLOR
+            lcd.RGB(0xCF, 0xB5, 0x9D), -- ACTIVE_COLOR
+            lcd.RGB(0xC2, 0xC5, 0xD5), -- INACTIVE_COLOR
+            lcd.RGB(0xCF, 0xB5, 0x9D), -- BUTTON_BORDER_ACTIVE_COLOR
+            lcd.RGB(0x85, 0x5B, 0x4B), -- BUTTON_BORDER_COLOR
+            lcd.RGB(0xFF, 0xD1, 0x8B), -- WARNING_COLOR
+            lcd.RGB(0x10, 0x26, 0x19), -- SAFE_CONTRASTING_COLOR
+            lcd.RGB(0x33, 0x20, 0x19), -- TOPLCD_BGCOLOR
+        },
+        toolbarBackground = lcd.loadBitmap("header-rc-pilot-rustic.png"),
+        toolbarLogo = "none",
+    })
+
+    -- RC Pilot Rainbow: 4 Color Rainbow.
+    system.registerTheme({
+        key = "RCP05",
+        name = "RC Pilot Rainbow",
+        darkMode = true,
+        roundButtons = true,
+        focusStyle = "invert",
+        borderWidth = 3,
+        colors = {
+            lcd.RGB(0xFF, 0xFF, 0xFF), -- PRIMARY_COLOR
+            lcd.RGB(0x24, 0x20, 0x78), -- SECONDARY_BGCOLOR
+            lcd.RGB(0xF2, 0xDE, 0x18), -- HIGHLIGHT_COLOR
+            lcd.RGB(0x17, 0x14, 0x3E), -- HIGHLIGHT_INVERT_COLOR
+            lcd.RGB(0x93, 0x9F, 0xC0), -- DISABLE_COLOR
+            lcd.RGB(0x10, 0x10, 0x3D), -- PRIMARY_BGCOLOR
+            lcd.RGB(0x00, 0x00, 0x00), -- OVERLAY_COLOR
+            lcd.RGB(0xFF, 0xF2, 0xA0), -- SECONDARY_COLOR
+            lcd.RGB(0xA4, 0xE8, 0xB2), -- SAFE_COLOR
+            lcd.RGB(0x08, 0x08, 0x24), -- PAGE_BGCOLOR
+            lcd.RGB(0xFF, 0xAD, 0xB5), -- ERROR_COLOR
+            lcd.RGB(0x65, 0xEB, 0x65), -- ACTIVE_COLOR
+            lcd.RGB(0xC2, 0xC5, 0xD5), -- INACTIVE_COLOR
+            lcd.RGB(0xF2, 0xDE, 0x18), -- BUTTON_BORDER_ACTIVE_COLOR
+            lcd.RGB(0xFF, 0x30, 0x25), -- BUTTON_BORDER_COLOR
+            lcd.RGB(0xFF, 0xD1, 0x8B), -- WARNING_COLOR
+            lcd.RGB(0x10, 0x26, 0x19), -- SAFE_CONTRASTING_COLOR
+            lcd.RGB(0x10, 0x10, 0x3D), -- TOPLCD_BGCOLOR
+        },
+        toolbarBackground = lcd.loadBitmap("header-rc-pilot-rainbow.png"),
+        toolbarLogo = "none",
+    })
+
+    -- RC Pilot Arctic: Blue Arctic Camouflage.
+    system.registerTheme({
+        key = "RCP06",
+        name = "RC Pilot Arctic",
+        darkMode = true,
+        roundButtons = true,
+        focusStyle = "invert",
+        borderWidth = 3,
+        colors = {
+            lcd.RGB(0xF5, 0xF5, 0xF5), -- PRIMARY_COLOR
+            lcd.RGB(0x30, 0x3F, 0x7C), -- SECONDARY_BGCOLOR
+            lcd.RGB(0xC5, 0xC9, 0xEF), -- HIGHLIGHT_COLOR
+            lcd.RGB(0x21, 0x19, 0x4D), -- HIGHLIGHT_INVERT_COLOR
+            lcd.RGB(0x94, 0x9B, 0xC3), -- DISABLE_COLOR
+            lcd.RGB(0x21, 0x19, 0x4D), -- PRIMARY_BGCOLOR
+            lcd.RGB(0x00, 0x00, 0x00), -- OVERLAY_COLOR
+            lcd.RGB(0xDD, 0xE1, 0xFF), -- SECONDARY_COLOR
+            lcd.RGB(0xA4, 0xE8, 0xB2), -- SAFE_COLOR
+            lcd.RGB(0x15, 0x10, 0x31), -- PAGE_BGCOLOR
+            lcd.RGB(0xFF, 0xAD, 0xB5), -- ERROR_COLOR
+            lcd.RGB(0xC5, 0xC9, 0xEF), -- ACTIVE_COLOR
+            lcd.RGB(0xC2, 0xC5, 0xD5), -- INACTIVE_COLOR
+            lcd.RGB(0xC5, 0xC9, 0xEF), -- BUTTON_BORDER_ACTIVE_COLOR
+            lcd.RGB(0x7E, 0x83, 0xAF), -- BUTTON_BORDER_COLOR
+            lcd.RGB(0xFF, 0xD1, 0x8B), -- WARNING_COLOR
+            lcd.RGB(0x10, 0x26, 0x19), -- SAFE_CONTRASTING_COLOR
+            lcd.RGB(0x21, 0x19, 0x4D), -- TOPLCD_BGCOLOR
+        },
+        toolbarBackground = lcd.loadBitmap("header-rc-pilot-arctic.png"),
+        toolbarLogo = "none",
+    })
+
+    -- RC Pilot Heritage: Heritage Canvas.
+    system.registerTheme({
+        key = "RCP07",
+        name = "RC Pilot Heritage",
+        darkMode = false,
+        roundButtons = true,
+        focusStyle = "invert",
+        borderWidth = 3,
+        colors = {
+            lcd.RGB(0x30, 0x23, 0x1E), -- PRIMARY_COLOR
+            lcd.RGB(0xDD, 0xC5, 0xB7), -- SECONDARY_BGCOLOR
+            lcd.RGB(0x37, 0x59, 0x7D), -- HIGHLIGHT_COLOR
+            lcd.RGB(0xFF, 0xFF, 0xFF), -- HIGHLIGHT_INVERT_COLOR
+            lcd.RGB(0x88, 0x7B, 0x70), -- DISABLE_COLOR
+            lcd.RGB(0xE8, 0xD4, 0xC9), -- PRIMARY_BGCOLOR
+            lcd.RGB(0x00, 0x00, 0x00), -- OVERLAY_COLOR
+            lcd.RGB(0x80, 0x2A, 0x1E), -- SECONDARY_COLOR
+            lcd.RGB(0x23, 0x61, 0x3C), -- SAFE_COLOR
+            lcd.RGB(0xF6, 0xEA, 0xE2), -- PAGE_BGCOLOR
+            lcd.RGB(0x9C, 0x19, 0x2B), -- ERROR_COLOR
+            lcd.RGB(0x31, 0x57, 0x3D), -- ACTIVE_COLOR
+            lcd.RGB(0x5C, 0x60, 0x6D), -- INACTIVE_COLOR
+            lcd.RGB(0x37, 0x59, 0x7D), -- BUTTON_BORDER_ACTIVE_COLOR
+            lcd.RGB(0xBC, 0x6D, 0x1B), -- BUTTON_BORDER_COLOR
+            lcd.RGB(0x75, 0x40, 0x00), -- WARNING_COLOR
+            lcd.RGB(0xFF, 0xFF, 0xFF), -- SAFE_CONTRASTING_COLOR
+            lcd.RGB(0xE8, 0xD4, 0xC9), -- TOPLCD_BGCOLOR
+        },
+        toolbarBackground = lcd.loadBitmap("header-rc-pilot-heritage.png"),
+        toolbarLogo = "none",
+    })
+
+    -- RC Pilot Steel Day: Steel Interface (light variant).
+    system.registerTheme({
+        key = "RCP08",
+        name = "RC Pilot Steel Day",
+        darkMode = false,
+        roundButtons = true,
+        focusStyle = "invert",
+        borderWidth = 3,
+        colors = {
+            lcd.RGB(0x29, 0x2C, 0x35), -- PRIMARY_COLOR
+            lcd.RGB(0xC5, 0xC5, 0xC5), -- SECONDARY_BGCOLOR
+            lcd.RGB(0x40, 0x51, 0x8C), -- HIGHLIGHT_COLOR
+            lcd.RGB(0xFF, 0xFF, 0xFF), -- HIGHLIGHT_INVERT_COLOR
+            lcd.RGB(0x77, 0x7B, 0x88), -- DISABLE_COLOR
+            lcd.RGB(0xEE, 0xF0, 0xF3), -- PRIMARY_BGCOLOR
+            lcd.RGB(0x00, 0x00, 0x00), -- OVERLAY_COLOR
+            lcd.RGB(0x5D, 0x4B, 0x15), -- SECONDARY_COLOR
+            lcd.RGB(0x23, 0x61, 0x3C), -- SAFE_COLOR
+            lcd.RGB(0xFA, 0xFA, 0xFB), -- PAGE_BGCOLOR
+            lcd.RGB(0x9C, 0x19, 0x2B), -- ERROR_COLOR
+            lcd.RGB(0x40, 0x51, 0x8C), -- ACTIVE_COLOR
+            lcd.RGB(0x5C, 0x60, 0x6D), -- INACTIVE_COLOR
+            lcd.RGB(0x40, 0x51, 0x8C), -- BUTTON_BORDER_ACTIVE_COLOR
+            lcd.RGB(0xB6, 0x9D, 0x4F), -- BUTTON_BORDER_COLOR
+            lcd.RGB(0x75, 0x40, 0x00), -- WARNING_COLOR
+            lcd.RGB(0xFF, 0xFF, 0xFF), -- SAFE_CONTRASTING_COLOR
+            lcd.RGB(0xEE, 0xF0, 0xF3), -- TOPLCD_BGCOLOR
+        },
+        toolbarBackground = lcd.loadBitmap("header-rc-pilot-steel-day.png"),
+        toolbarLogo = "none",
+    })
+    -- END RC PILOT THEMES
+
 end
 
 return {
