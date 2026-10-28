@@ -25,7 +25,8 @@ Select a theme under **System > General > Theme**.
 A light silver, white and red theme with the supplied helicopter image centered
 in its 784 x 50 header. The photo background is transparent, and the theme uses
 no black palette colors. A light green battery fill has dark green contrasting details, with a deep red
-outline against the supplied slate grey header. The page also uses a light grey background.
+outline against a light silver header that matches the page background. The header
+uses the newer helicopter image with the original STRATOS 700 lettering behind it.
 See [the theme preview](previews/stratos-700-xlpower.png).
 Rebuild the header with `.vscode/scripts/build_stratos_header.ps1`.
 

@@ -2,9 +2,9 @@ param([switch]$Dark)
 $ErrorActionPreference = 'Stop'
 Add-Type -AssemblyName System.Drawing
 $root = [IO.Path]::GetFullPath((Join-Path $PSScriptRoot '../..'))
-$themeName = 'XL Stratos 700'; $headerColor = '#7D8996'; $pageColor = '#ECEFF2'
-$textColor = '#354150'; $panelColor = '#E0E5EB'; $accentColor = '#B81E32'
-$borderColor = '#701222'; $inverseColor = '#FFFFFF'
+$themeName = 'XL Stratos 700'; $headerColor = '#F0F2F5'; $pageColor = '#F0F2F5'
+$textColor = '#303B49'; $panelColor = '#D8DEE5'; $accentColor = '#C51F36'
+$borderColor = '#8F1528'; $inverseColor = '#FFFFFF'
 $headerFile = 'header-stratos-700-xlpower.png'; $previewFile = 'stratos-700-xlpower.png'
 if ($Dark) {
     $themeName = 'XL Stratos 700 Dark'; $headerColor = '#272B30'; $pageColor = '#272B30'
@@ -12,7 +12,7 @@ if ($Dark) {
     $borderColor = '#E5EAF0'; $inverseColor = '#352028'
     $headerFile = 'header-xl-stratos-700-dark.png'; $previewFile = 'xl-stratos-700-dark.png'
 }
-$artFile = if ($Dark) { 'previews/stratos-700-dark-lettering.png' } else { 'previews/stratos-700-cutout.png' }
+$artFile = 'previews/stratos-700-dark-lettering.png'
 $art = [Drawing.Bitmap]::new((Join-Path $root $artFile))
 # Find visible artwork bounds, retaining all rotor and landing gear details.
 $left = $art.Width; $top = $art.Height; $right = 0; $bottom = 0

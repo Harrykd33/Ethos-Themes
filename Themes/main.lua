@@ -1191,24 +1191,24 @@ local function init()
         focusStyle = "invert",
         borderWidth = 3,
         colors = {
-            lcd.RGB(0x35, 0x41, 0x50), -- PRIMARY_COLOR (slate text)
-            lcd.RGB(0xE0, 0xE5, 0xEB), -- SECONDARY_BGCOLOR (silver panels)
-            lcd.RGB(0xB8, 0x1E, 0x32), -- HIGHLIGHT_COLOR (canopy red)
+            lcd.RGB(0x30, 0x3B, 0x49), -- PRIMARY_COLOR (slate text)
+            lcd.RGB(0xD8, 0xDE, 0xE5), -- SECONDARY_BGCOLOR (silver panels)
+            lcd.RGB(0xC5, 0x1F, 0x36), -- HIGHLIGHT_COLOR (canopy red)
             lcd.RGB(0xFF, 0xFF, 0xFF), -- HIGHLIGHT_INVERT_COLOR
             lcd.RGB(0x7C, 0x87, 0x94), -- DISABLE_COLOR
-            lcd.RGB(0xEC, 0xEF, 0xF2), -- PRIMARY_BGCOLOR (light grey)
+            lcd.RGB(0xF0, 0xF2, 0xF5), -- PRIMARY_BGCOLOR (light grey)
             lcd.RGB(0x82, 0x8D, 0x9B), -- OVERLAY_COLOR (slate, no black)
             lcd.RGB(0x9F, 0x1A, 0x2E), -- SECONDARY_COLOR
             lcd.RGB(0x8E, 0xD9, 0x9C), -- SAFE_COLOR (light green battery fill)
-            lcd.RGB(0xEC, 0xEF, 0xF2), -- PAGE_BGCOLOR (light grey)
+            lcd.RGB(0xF0, 0xF2, 0xF5), -- PAGE_BGCOLOR (light grey)
             lcd.RGB(0xB0, 0x1C, 0x30), -- ERROR_COLOR
-            lcd.RGB(0xB8, 0x1E, 0x32), -- ACTIVE_COLOR
+            lcd.RGB(0xC5, 0x1F, 0x36), -- ACTIVE_COLOR
             lcd.RGB(0x65, 0x72, 0x82), -- INACTIVE_COLOR
-            lcd.RGB(0x70, 0x12, 0x22), -- BUTTON_BORDER_ACTIVE_COLOR (battery outline)
+            lcd.RGB(0x8F, 0x15, 0x28), -- BUTTON_BORDER_ACTIVE_COLOR (battery outline)
             lcd.RGB(0x56, 0x64, 0x77), -- BUTTON_BORDER_COLOR
             lcd.RGB(0x85, 0x4D, 0x0B), -- WARNING_COLOR
-            lcd.RGB(0x23, 0x55, 0x3A), -- SAFE_CONTRASTING_COLOR (dark green on light battery)
-            lcd.RGB(0xEC, 0xEF, 0xF2), -- TOPLCD_BGCOLOR
+            lcd.RGB(0x1F, 0x3D, 0x2B), -- SAFE_CONTRASTING_COLOR (dark green on light battery)
+            lcd.RGB(0xF0, 0xF2, 0xF5), -- TOPLCD_BGCOLOR
         },
         toolbarBackground = lcd.loadBitmap("header-stratos-700-xlpower.png"),
         toolbarLogo = "none",
