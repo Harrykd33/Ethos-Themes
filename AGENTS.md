@@ -2,6 +2,7 @@
 
 Apply these rules to every theme, including light and dark variants:
 
+- Whenever the user designates a name or brand for a theme or theme family, add `-- studio-branding: <designated name>` inside every corresponding `system.registerTheme({ ... })` block. Use the user's spelling and capitalization, apply the tag to all variants, and preserve it in any generators or rebuild scripts so Theme Studio can group them under that branding.
 - Maintain high contrast around the battery. Its outline must remain clearly visible against the actual header background.
 - Maintain high contrast for details inside the battery. Text, symbols, and other indicators must remain clearly visible against the battery fill.
 - Check both contrasts whenever changing a theme's header background, battery fill, outline, or detail colors. Check normal, warning, and low-battery colors where applicable.
