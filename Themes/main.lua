@@ -4,6 +4,7 @@ local function init()
     system.registerTheme({
         key = "KvnD",
         name = "KvnD",
+        -- studio-preview: previews/kvnd.png
         roundButtons = true,
         focusStyle = "invert",
         colors = {
@@ -33,6 +34,7 @@ local function init()
     system.registerTheme({
         key = "Teal",
         name = "Teal RFs",
+        -- studio-preview: previews/teal.png
         roundButtons = true,
         focusStyle = "outline",
         borderWidth = 4,
@@ -63,6 +65,7 @@ local function init()
    system.registerTheme({
     key = "PUIMA",
     name = " Pu RFs",
+        -- studio-preview: previews/pu-rfs.png
     roundButtons = true,
     focusStyle = "outline",
     borderWidth = 4,
@@ -93,6 +96,7 @@ local function init()
     system.registerTheme({
         key = "Ocean",
         name = "Ocean",
+        -- studio-preview: previews/ocean.png
         roundButtons = true,
         focusStyle = "invert",
         darkMode = true,
@@ -123,6 +127,7 @@ local function init()
     system.registerTheme({
     key = "Bluv2",
     name = "Blu Rfs",
+        -- studio-preview: previews/blu-rfs.png
     roundButtons = true,
     focusStyle = "invert",
     borderWidth = 4,
@@ -153,6 +158,7 @@ local function init()
      system.registerTheme({
     key = "yello",
     name = "Yelo Rfs",
+        -- studio-preview: previews/yelo-rfs.png
     roundButtons = true,
     focusStyle = "invert",
     borderWidth = 4,
@@ -184,6 +190,7 @@ local function init()
     system.registerTheme({
         key = "CyberPn",
         name = "Cyberpunk",
+        -- studio-preview: previews/cyberpunk.png
         darkMode = true,
         roundButtons = true,
         focusStyle = "invert",
@@ -217,6 +224,7 @@ local function init()
     system.registerTheme({
         key = "SilvFlm",
         name = "Silver Flame",
+        -- studio-preview: previews/silver-flame.png
         darkMode = false,
         roundButtons = true,
         focusStyle = "invert",
@@ -250,6 +258,7 @@ local function init()
     system.registerTheme({
         key = "PorcTde",
         name = "Porcelain Tide",
+        -- studio-preview: previews/porcelain-tide.png
         darkMode = false,
         roundButtons = true,
         focusStyle = "invert",
@@ -283,6 +292,7 @@ local function init()
     system.registerTheme({
         key = "AprAtlr",
         name = "Apricot Atelier",
+        -- studio-preview: previews/apricot-atelier.png
         darkMode = false,
         roundButtons = true,
         focusStyle = "invert",
@@ -316,6 +326,7 @@ local function init()
     system.registerTheme({
         key = "AlpLinn",
         name = "Alpine Linen",
+        -- studio-preview: previews/alpine-linen.png
         darkMode = false,
         roundButtons = false,
         focusStyle = "invert",
@@ -349,6 +360,7 @@ local function init()
     system.registerTheme({
         key = "EmbrObs",
         name = "Ember Obsidian",
+        -- studio-preview: previews/ember-obsidian.png
         darkMode = true,
         roundButtons = false,
         focusStyle = "invert",
@@ -382,6 +394,7 @@ local function init()
     system.registerTheme({
         key = "AurNoir",
         name = "Aurora Noir",
+        -- studio-preview: previews/aurora-noir.png
         darkMode = true,
         roundButtons = true,
         focusStyle = "invert",
@@ -415,6 +428,7 @@ local function init()
     system.registerTheme({
         key = "VlvOrbt",
         name = "Velvet Orbit",
+        -- studio-preview: previews/velvet-orbit.png
         darkMode = true,
         roundButtons = true,
         focusStyle = "invert",
@@ -448,6 +462,7 @@ local function init()
     system.registerTheme({
         key = "SolarIk",
         name = "Solar Ink",
+        -- studio-preview: previews/solar-ink.png
         darkMode = false,
         roundButtons = false,
         focusStyle = "invert",
@@ -480,6 +495,7 @@ local function init()
     system.registerTheme({
         key = "GlacSig",
         name = "Glacier Signal",
+        -- studio-preview: previews/glacier-signal.png
         darkMode = false,
         roundButtons = false,
         focusStyle = "invert",
@@ -512,6 +528,7 @@ local function init()
     system.registerTheme({
         key = "ChryPrs",
         name = "Cherry Press",
+        -- studio-preview: previews/cherry-press.png
         darkMode = false,
         roundButtons = true,
         focusStyle = "invert",
@@ -544,6 +561,7 @@ local function init()
     system.registerTheme({
         key = "LimeVlt",
         name = "Lime Voltage",
+        -- studio-preview: previews/lime-voltage.png
         darkMode = false,
         roundButtons = false,
         focusStyle = "invert",
@@ -576,6 +594,7 @@ local function init()
     system.registerTheme({
         key = "CarbBcn",
         name = "Carbon Beacon",
+        -- studio-preview: previews/carbon-beacon.png
         darkMode = true,
         roundButtons = false,
         focusStyle = "invert",
@@ -608,6 +627,7 @@ local function init()
     system.registerTheme({
         key = "ArctRdr",
         name = "Arctic Radar",
+        -- studio-preview: previews/arctic-radar.png
         darkMode = true,
         roundButtons = true,
         focusStyle = "invert",
@@ -640,6 +660,7 @@ local function init()
     system.registerTheme({
         key = "PolTwlt",
         name = "Polaroid Twilight",
+        -- studio-preview: previews/polaroid-twilight.png
         darkMode = true,
         roundButtons = true,
         focusStyle = "invert",
@@ -672,6 +693,7 @@ local function init()
     system.registerTheme({
         key = "SunDusk",
         name = "Sunflare Dusk",
+        -- studio-preview: previews/sunflare-dusk.png
         darkMode = true,
         roundButtons = false,
         focusStyle = "invert",
@@ -704,6 +726,7 @@ local function init()
     system.registerTheme({
         key = "SftSnst",
         name = "Soft Sunset Flame",
+        -- studio-preview: previews/soft-sunset-flame.png
         darkMode = false,
         roundButtons = true,
         focusStyle = "invert",
@@ -736,6 +759,7 @@ local function init()
     system.registerTheme({
         key = "ElecFre",
         name = "Electric Freedom",
+        -- studio-preview: previews/electric-freedom.png
         darkMode = true,
         roundButtons = false,
         focusStyle = "invert",
@@ -768,6 +792,7 @@ local function init()
     system.registerTheme({
         key = "FourRnb",
         name = "4 Color Rainbow",
+        -- studio-preview: previews/4-color-rainbow.png
         darkMode = true,
         roundButtons = true,
         focusStyle = "invert",
@@ -800,6 +825,7 @@ local function init()
     system.registerTheme({
         key = "DustBrt",
         name = "Dusty Bright",
+        -- studio-preview: previews/dusty-bright.png
         darkMode = false,
         roundButtons = true,
         focusStyle = "invert",
@@ -832,6 +858,7 @@ local function init()
     system.registerTheme({
         key = "Neonish",
         name = "Neonish",
+        -- studio-preview: previews/neonish.png
         darkMode = true,
         roundButtons = true,
         focusStyle = "invert",
@@ -864,6 +891,7 @@ local function init()
     system.registerTheme({
         key = "HappyHp",
         name = "Happy Happy",
+        -- studio-preview: previews/happy-happy.png
         darkMode = false,
         roundButtons = true,
         focusStyle = "invert",
@@ -896,6 +924,7 @@ local function init()
     system.registerTheme({
         key = "DiwaliC",
         name = "Diwali Celebration",
+        -- studio-preview: previews/diwali-celebration.png
         darkMode = true,
         roundButtons = false,
         focusStyle = "invert",
@@ -929,6 +958,7 @@ local function init()
     system.registerTheme({
         key = "RCP01",
         name = "RC Pilot Rangoli",
+        -- studio-preview: previews/rc-pilot-rangoli.png
         darkMode = true,
         roundButtons = true,
         focusStyle = "invert",
@@ -961,6 +991,7 @@ local function init()
     system.registerTheme({
         key = "RCP02",
         name = "RC Pilot Electric",
+        -- studio-preview: previews/rc-pilot-electric.png
         darkMode = true,
         roundButtons = true,
         focusStyle = "invert",
@@ -993,6 +1024,7 @@ local function init()
     system.registerTheme({
         key = "RCP03",
         name = "RC Pilot Steel",
+        -- studio-preview: previews/rc-pilot-steel.png
         darkMode = true,
         roundButtons = true,
         focusStyle = "invert",
@@ -1025,6 +1057,7 @@ local function init()
     system.registerTheme({
         key = "RCP04",
         name = "RC Pilot Rustic",
+        -- studio-preview: previews/rc-pilot-rustic.png
         darkMode = true,
         roundButtons = true,
         focusStyle = "invert",
@@ -1057,6 +1090,7 @@ local function init()
     system.registerTheme({
         key = "RCP05",
         name = "RC Pilot Rainbow",
+        -- studio-preview: previews/rc-pilot-rainbow.png
         darkMode = true,
         roundButtons = true,
         focusStyle = "invert",
@@ -1089,6 +1123,7 @@ local function init()
     system.registerTheme({
         key = "RCP06",
         name = "RC Pilot Arctic",
+        -- studio-preview: previews/rc-pilot-arctic.png
         darkMode = true,
         roundButtons = true,
         focusStyle = "invert",
@@ -1121,6 +1156,7 @@ local function init()
     system.registerTheme({
         key = "RCP07",
         name = "RC Pilot Heritage",
+        -- studio-preview: previews/rc-pilot-heritage.png
         darkMode = false,
         roundButtons = true,
         focusStyle = "invert",
@@ -1153,6 +1189,7 @@ local function init()
     system.registerTheme({
         key = "RCP08",
         name = "RC Pilot Steel Day",
+        -- studio-preview: previews/rc-pilot-steel-day.png
         darkMode = false,
         roundButtons = true,
         focusStyle = "invert",

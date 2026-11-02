@@ -59,6 +59,7 @@ def build():
         themes.append(item)
         lines = [f'    -- {item["name"]}: {source}.', '    system.registerTheme({',
                  f'        key = "{item["key"]}",', f'        name = "{item["name"]}",',
+                 f'        -- studio-preview: previews/rc-pilot-{slug}.png',
                  f'        darkMode = {str(dark).lower()},', '        roundButtons = true,',
                  '        focusStyle = "invert",', '        borderWidth = 3,', '        colors = {']
         for color, slot in zip(colors, SLOTS):

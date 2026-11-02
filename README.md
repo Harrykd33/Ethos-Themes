@@ -106,13 +106,29 @@ their `system.registerTheme` block, for example:
 -- studio-preview: previews/amain-cobalt-dark.png
 ```
 
-The four AMain, four XL Stratos, and two SAB IL Piuma themes include these
-references. Theme Studio's planned Livery preview option should read
-`studio-preview` and load that path from the same repository revision as the
-theme catalog. These images are catalog assets in `previews/`, separate from the
-radio's installed `Themes/` assets; the comment alone does not add app support.
-Other comparison sheets, source artwork, and logo cutouts in `previews/` are not
-individual theme previews and are not assigned as such.
+All 47 themes include an explicit reference to their own individual preview.
+Theme Studio's **Studio Preview** view reads `studio-preview`, locates the image
+in the repository's `previews/` folder at the same catalog revision, and assigns
+it to that theme. It caches the artwork for offline use. These images are catalog
+assets, separate from the radio's installed `Themes/` assets. Comparison sheets,
+source artwork, and logo cutouts are not assigned as individual previews.
+
+After adding or rebuilding themes, run:
+
+```powershell
+python .vscode/scripts/build_studio_previews.py
+python .vscode/scripts/build_studio_previews.py --check
+```
+
+The builder creates missing palette/layout illustrations using each theme's
+actual header and RGB565 palette, preserves existing individual artwork, and
+adds missing assignments inside `system.registerTheme`. The check verifies that
+every theme has a unique reference to a valid image without changing files.
+To regenerate an illustration after palette changes, remove that individual
+preview image and rerun the builder. Requires Pillow. These are illustrative
+previews rather than simulator screenshots; existing palette contrast limitations
+remain visible. Refresh Theme Studio's catalog after publishing the changed Lua
+and preview files to the theme repository.
 
 ## AMain themes
 
