@@ -1378,6 +1378,7 @@ local function init()
     system.registerTheme({
         key = "AMnCD",
         name = "AMain Carbon Dark",
+        -- studio-branding: AMain
         darkMode = true,
         roundButtons = true,
         focusStyle = "invert",
@@ -1409,6 +1410,7 @@ local function init()
     system.registerTheme({
         key = "AMnBD",
         name = "AMain Cobalt Dark",
+        -- studio-branding: AMain
         darkMode = true,
         roundButtons = true,
         focusStyle = "invert",
@@ -1440,6 +1442,7 @@ local function init()
     system.registerTheme({
         key = "AMnOL",
         name = "AMain Orange Light",
+        -- studio-branding: AMain
         darkMode = false,
         roundButtons = true,
         focusStyle = "invert",
@@ -1471,6 +1474,7 @@ local function init()
     system.registerTheme({
         key = "AMnBL",
         name = "AMain Blue Light",
+        -- studio-branding: AMain
         darkMode = false,
         roundButtons = true,
         focusStyle = "invert",

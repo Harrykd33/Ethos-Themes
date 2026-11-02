@@ -99,6 +99,8 @@ manifest and header source artwork are kept in `previews/`.
 
 ## AMain themes
 
+All four declare `studio-branding: AMain` for Theme Studio's **Branding > AMain** filter.
+
 Four themes combine AMain orange and charcoal with the supplied Fall Mowdown
 reference's cobalt blue, white, and silver:
 
