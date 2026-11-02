@@ -10,6 +10,11 @@ SLOTS = ['PRIMARY_COLOR', 'SECONDARY_BGCOLOR', 'HIGHLIGHT_COLOR',
          'BUTTON_BORDER_ACTIVE_COLOR', 'BUTTON_BORDER_COLOR', 'WARNING_COLOR',
          'SAFE_CONTRASTING_COLOR', 'TOPLCD_BGCOLOR']
 
+# Keep the existing dashboard text and outline colors. Light variants use
+# pale green; dark variants use blue with sufficient contrast for white text.
+NORMAL_BATTERY_FILLS = ['36739C', '31678C', '275371', '31678C',
+                        '3A7BA7', '37759F', '8ED99C', '8ED99C']
+
 # Palette swatches follow the supplied reference; UI shades preserve legibility.
 DATA = [
     ('Rangoli', 'Rangoli Spectrum', True,
@@ -43,7 +48,7 @@ def build():
     for i, (label, source, dark, swatches, ui) in enumerate(DATA, 1):
         fg, panel, highlight, inverse, disabled, bg, secondary, page, active, border = ui.split()
         colors = [fg, panel, highlight, inverse, disabled, bg, '000000', secondary,
-                  'A4E8B2' if dark else '23613C', page,
+                  NORMAL_BATTERY_FILLS[i - 1], page,
                   'FFADB5' if dark else '9C192B', active,
                   'C2C5D5' if dark else '5C606D', highlight, border,
                   'FFD18B' if dark else '754000', '102619' if dark else 'FFFFFF', bg]

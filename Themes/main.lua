@@ -15,7 +15,7 @@ local function init()
         lcd.RGB(28,15,68),         -- PRIMARY_BGCOLOR (Rich OLED midnight-grey background)
         BLACK,                     -- OVERLAY_COLOR
         lcd.RGB(0xFF, 0xFF, 0xFF), -- SECONDARY_COLOR (Ice blue-grey accent text)
-        lcd.RGB(0x00, 0xFF, 0xA3), -- SAFE_COLOR (Hyper-neon spring green)
+        lcd.RGB(0x19, 0x34, 0x47), -- SAFE_COLOR (normal battery fill; contrasting text and outline)
         lcd.RGB(0x18, 0x1A, 0x20), -- PAGE_BGCOLOR (Subtle dark backing layout)
         lcd.RGB(0xFF, 0x5A, 0x68), -- ERROR_COLOR (system critical: red)
         lcd.RGB(0x00, 0xFF, 0xA3), -- ACTIVE_COLOR (Hyper-neon spring green)
@@ -46,12 +46,12 @@ local function init()
             lcd.RGB(0xBD, 0xE6, 0xD6), -- PRIMARY_BGCOLOR
             lcd.GREY(0x60),            -- OVERLAY_COLOR
             lcd.RGB(255, 34, 10),      -- SECONDARY_COLOR
-            lcd.RGB(65, 217, 30), -- SAFE_COLOR
+            lcd.RGB(0xD0, 0xEF, 0xD5), -- SAFE_COLOR (normal battery fill; contrasting text and outline)
             lcd.RGB(242, 240, 232),    -- PAGE_BGCOLOR
             lcd.RGB(0x8B, 0x00, 0x15), -- ERROR_COLOR (system critical: red)
             lcd.RGB(0x08, 0x91, 0x08), -- ACTIVE_COLOR
             lcd.RGB(0x3E, 0x3A, 0x2B), -- INACTIVE_COLOR
-            lcd.RGB(0x81, 0x5C, 0xD6), -- BUTTON_BORDER_ACTIVE_COLOR xCF
+            lcd.RGB(0x47, 0x33, 0x76), -- BUTTON_BORDER_ACTIVE_COLOR (battery outline; contrasts with header)
             lcd.RGB(118, 145, 137),    -- BUTTON_BORDER_COLOR
             lcd.RGB(0x8A, 0x43, 0x00), -- WARNING_COLOR (system warning: amber)
             lcd.RGB(0, 0, 0),          -- SAFE_CONTRASTING_COLOR
@@ -76,12 +76,12 @@ local function init()
         lcd.RGB(255, 255, 255),    -- PRIMARY_BGCOLOR (White #ffffff)
         lcd.GREY(0x60),            -- OVERLAY_COLOR
         lcd.RGB(250, 39, 0),    -- SECONDARY_color (Glossy Coral #FA8567)
-        lcd.RGB(53, 121, 248), -- SAFE_COLOR (white)
+        lcd.RGB(0xE8, 0xF7, 0xEA), -- SAFE_COLOR (normal battery fill; contrasting text and outline)
         lcd.RGB(240, 193, 165),    -- PAGE_BGCOLOR (Light Sky Blue #B2E4FF)
         lcd.RGB(0x8B, 0x00, 0x15), -- ERROR_COLOR (system critical: red)
         lcd.RGB(0x00, 0xFF, 0xCC), -- ACTIVE_COLOR (cyan n�on)
         lcd.RGB(0xC4, 0xAE, 0xFF), -- INACTIVE_COLOR (lavande)
-        lcd.RGB(0xFF, 0x00, 0xCC), -- BUTTON_BORDER_ACTIVE_COLOR (magenta n�on)
+        lcd.RGB(0xBF, 0x00, 0x99), -- BUTTON_BORDER_ACTIVE_COLOR (battery outline; contrasts with header)
         lcd.RGB(250, 39, 0),      -- BUTTON_BORDER_COLOR (Mostly desaturated dark blue #55677c)
         lcd.RGB(0x8A, 0x43, 0x00), -- WARNING_COLOR (system warning: amber)
         lcd.RGB(0, 0, 0),          -- SAFE_CONTRASTING_COLOR
@@ -105,12 +105,12 @@ local function init()
             lcd.RGB(0x18, 0x20, 0x40), -- PRIMARY_BGCOLOR (bleu nuit � lum ~0.016 = Dracula)
             BLACK,                     -- OVERLAY_COLOR
             lcd.RGB(0x88, 0xBB, 0xDD), -- SECONDARY_COLOR (bleu ciel lisible)
-            lcd.RGB(0x84, 0xC3, 0x0F), -- SAFE_COLOR (vert ethos)
+            lcd.RGB(0x20, 0x43, 0x5B), -- SAFE_COLOR (normal battery fill; contrasting text and outline)
             lcd.RGB(0x0E, 0x18, 0x30), -- PAGE_BGCOLOR (plus sombre que PRIMARY)
             lcd.RGB(0xFF, 0x5A, 0x68), -- ERROR_COLOR (system critical: red)
             lcd.RGB(0x44, 0x88, 0xFF), -- ACTIVE_COLOR (bleu royal)
             lcd.RGB(0x2A, 0x50, 0x80), -- INACTIVE_COLOR (bleu terne)
-            lcd.RGB(0x44, 0x88, 0xFF), -- BUTTON_BORDER_ACTIVE_COLOR
+            lcd.RGB(0x50, 0x90, 0xFF), -- BUTTON_BORDER_ACTIVE_COLOR (battery outline; contrasts with header)
             lcd.RGB(0x2C, 0x44, 0x68), -- BUTTON_BORDER_COLOR
             lcd.RGB(0xFF, 0xB3, 0x47), -- WARNING_COLOR (system warning: amber)
             lcd.RGB(0, 0, 0),          -- SAFE_CONTRASTING_COLOR
@@ -141,7 +141,7 @@ local function init()
         lcd.RGB(0x8B, 0x00, 0x15), -- ERROR_COLOR (system critical: red)
         lcd.RGB(0x00, 0xFF, 0xCC), -- ACTIVE_COLOR (cyan n�on)
         lcd.RGB(0xC4, 0xAE, 0xFF), -- INACTIVE_COLOR (lavande)
-        lcd.RGB(49, 80, 214),      -- BUTTON_BORDER_ACTIVE_COLOR (Top bar batt icon
+        lcd.RGB(0x20, 0x33, 0x8A), -- BUTTON_BORDER_ACTIVE_COLOR (battery outline; contrasts with header)
         lcd.RGB(49, 80, 214),      -- BUTTON_BORDER_COLOR (Mostly desaturated dark blue #55677c)
         lcd.RGB(0x8A, 0x43, 0x00), -- WARNING_COLOR (system warning: amber)
         lcd.RGB(0, 0, 0),          -- SAFE_CONTRASTING_COLOR
@@ -166,12 +166,12 @@ local function init()
         lcd.RGB(244, 211, 56),     -- PRIMARY_BGCOLOR (Light Sky Blue #678bc1)
         lcd.GREY(0x60),            -- OVERLAY_COLOR
         lcd.RGB(227, 39, 39),      -- SECONDARY_color (Glossy Coral #FA8567)88, 109, 226
-        lcd.RGB(32, 176, 212), -- SAFE_COLOR (white)
+        lcd.RGB(0xC5, 0xEC, 0xCD), -- SAFE_COLOR (normal battery fill; contrasting text and outline)
         lcd.RGB(43, 189, 97),    -- PAGE_BGCOLOR (Light Sky Blue #B2E4FF)
         lcd.RGB(0x8B, 0x00, 0x15), -- ERROR_COLOR (system critical: red)
         lcd.RGB(0x00, 0xFF, 0xCC), -- ACTIVE_COLOR (cyan n�on)
         lcd.RGB(0xC4, 0xAE, 0xFF), -- INACTIVE_COLOR (lavande)
-        lcd.RGB(255, 0, 0),      -- BUTTON_BORDER_ACTIVE_COLOR (Top bar batt icon
+        lcd.RGB(0xA7, 0x00, 0x00), -- BUTTON_BORDER_ACTIVE_COLOR (battery outline; contrasts with header)
         lcd.RGB(227, 39, 39),      -- BUTTON_BORDER_COLOR (Mostly desaturated dark blue #55677c)
         lcd.RGB(0x8A, 0x43, 0x00), -- WARNING_COLOR (system warning: amber)
         lcd.RGB(0, 0, 0),          -- SAFE_CONTRASTING_COLOR
@@ -197,7 +197,7 @@ local function init()
             lcd.RGB(0x0D, 0x10, 0x20), -- PRIMARY_BGCOLOR: midnight indigo
             lcd.RGB(0x00, 0x00, 0x00), -- OVERLAY_COLOR
             lcd.RGB(0xC4, 0xB5, 0xF4), -- SECONDARY_COLOR: pale lavender
-            lcd.RGB(0x52, 0xFF, 0xA8), -- SAFE_COLOR: mint green
+            lcd.RGB(0x25, 0x4F, 0x6B), -- SAFE_COLOR (normal battery fill; contrasting text and outline)
             lcd.RGB(0x08, 0x0B, 0x16), -- PAGE_BGCOLOR: deep ink
             lcd.RGB(0xFF, 0x5B, 0x64), -- ERROR_COLOR: critical red
             lcd.RGB(0x00, 0xE5, 0xFF), -- ACTIVE_COLOR: neon cyan
@@ -230,12 +230,12 @@ local function init()
             lcd.RGB(0xEF, 0xF2, 0xF0), -- PRIMARY_BGCOLOR: pearl silver
             lcd.RGB(0x00, 0x00, 0x00), -- OVERLAY_COLOR
             lcd.RGB(0x24, 0x5E, 0x91), -- SECONDARY_COLOR: blue accent text
-            lcd.RGB(0x35, 0xD6, 0x4B), -- SAFE_COLOR: vibrant lime green
+            lcd.RGB(0xDD, 0xF4, 0xE1), -- SAFE_COLOR (normal battery fill; contrasting text and outline)
             lcd.RGB(0xFA, 0xFB, 0xF9), -- PAGE_BGCOLOR: soft white
             lcd.RGB(0xA5, 0x10, 0x25), -- ERROR_COLOR: critical crimson
             lcd.RGB(0x00, 0x6D, 0xB5), -- ACTIVE_COLOR: vivid blue
             lcd.RGB(0x66, 0x74, 0x7C), -- INACTIVE_COLOR: slate grey
-            lcd.RGB(0x00, 0x8F, 0xDB), -- BUTTON_BORDER_ACTIVE_COLOR: electric blue
+            lcd.RGB(0x00, 0x7F, 0xC3), -- BUTTON_BORDER_ACTIVE_COLOR (battery outline; contrasts with header)
             lcd.RGB(0x4F, 0x8F, 0xB8), -- BUTTON_BORDER_COLOR: steel blue
             lcd.RGB(0x86, 0x42, 0x00), -- WARNING_COLOR: dark amber
             lcd.RGB(0x17, 0x1E, 0x22), -- SAFE_CONTRASTING_COLOR: charcoal on lime
@@ -263,7 +263,7 @@ local function init()
             lcd.RGB(0xF1, 0xF8, 0xF6), -- PRIMARY_BGCOLOR: porcelain
             lcd.RGB(0x16, 0x32, 0x3D), -- OVERLAY_COLOR
             lcd.RGB(0x27, 0x63, 0x6B), -- SECONDARY_COLOR: deep teal
-            lcd.RGB(0x20, 0x73, 0x4D), -- SAFE_COLOR
+            lcd.RGB(0x8E, 0xD9, 0x9C), -- SAFE_COLOR (normal battery fill; contrasting text and outline)
             lcd.RGB(0xFF, 0xFD, 0xF7), -- PAGE_BGCOLOR: shell white
             lcd.RGB(0xAA, 0x23, 0x35), -- ERROR_COLOR
             lcd.RGB(0x21, 0x59, 0xB5), -- ACTIVE_COLOR
@@ -296,7 +296,7 @@ local function init()
             lcd.RGB(0xFF, 0xF4, 0xE7), -- PRIMARY_BGCOLOR: warm paper
             lcd.RGB(0x3D, 0x2A, 0x30), -- OVERLAY_COLOR
             lcd.RGB(0x79, 0x45, 0x3B), -- SECONDARY_COLOR: terracotta ink
-            lcd.RGB(0x2C, 0x70, 0x4D), -- SAFE_COLOR
+            lcd.RGB(0x8E, 0xD9, 0x9C), -- SAFE_COLOR (normal battery fill; contrasting text and outline)
             lcd.RGB(0xFF, 0xFB, 0xF4), -- PAGE_BGCOLOR: ivory
             lcd.RGB(0xAB, 0x1E, 0x32), -- ERROR_COLOR
             lcd.RGB(0x87, 0x36, 0x64), -- ACTIVE_COLOR
@@ -329,7 +329,7 @@ local function init()
             lcd.RGB(0xF4, 0xF2, 0xE6), -- PRIMARY_BGCOLOR: natural linen
             lcd.RGB(0x28, 0x36, 0x2C), -- OVERLAY_COLOR
             lcd.RGB(0x65, 0x59, 0x30), -- SECONDARY_COLOR: olive bronze
-            lcd.RGB(0x2D, 0x63, 0x49), -- SAFE_COLOR
+            lcd.RGB(0x8E, 0xD9, 0x9C), -- SAFE_COLOR (normal battery fill; contrasting text and outline)
             lcd.RGB(0xFF, 0xFD, 0xF3), -- PAGE_BGCOLOR: limestone
             lcd.RGB(0xA4, 0x28, 0x31), -- ERROR_COLOR
             lcd.RGB(0x2D, 0x63, 0x49), -- ACTIVE_COLOR
@@ -362,7 +362,7 @@ local function init()
             lcd.RGB(0x1C, 0x19, 0x17), -- PRIMARY_BGCOLOR: obsidian
             lcd.RGB(0x00, 0x00, 0x00), -- OVERLAY_COLOR
             lcd.RGB(0xDC, 0xBC, 0x91), -- SECONDARY_COLOR: pale gold
-            lcd.RGB(0x94, 0xDA, 0xA0), -- SAFE_COLOR
+            lcd.RGB(0x31, 0x67, 0x8C), -- SAFE_COLOR (normal battery fill; contrasting text and outline)
             lcd.RGB(0x11, 0x0F, 0x0E), -- PAGE_BGCOLOR: charcoal black
             lcd.RGB(0xFF, 0x72, 0x78), -- ERROR_COLOR
             lcd.RGB(0xFF, 0xA0, 0x62), -- ACTIVE_COLOR
@@ -395,7 +395,7 @@ local function init()
             lcd.RGB(0x0C, 0x20, 0x1E), -- PRIMARY_BGCOLOR: blackened spruce
             lcd.RGB(0x00, 0x00, 0x00), -- OVERLAY_COLOR
             lcd.RGB(0xA3, 0xD8, 0xED), -- SECONDARY_COLOR: glacial blue
-            lcd.RGB(0xA6, 0xE8, 0x81), -- SAFE_COLOR
+            lcd.RGB(0x35, 0x6F, 0x97), -- SAFE_COLOR (normal battery fill; contrasting text and outline)
             lcd.RGB(0x06, 0x13, 0x13), -- PAGE_BGCOLOR: polar night
             lcd.RGB(0xFF, 0x7B, 0x86), -- ERROR_COLOR
             lcd.RGB(0x72, 0xEC, 0xBB), -- ACTIVE_COLOR
@@ -428,7 +428,7 @@ local function init()
             lcd.RGB(0x20, 0x16, 0x2B), -- PRIMARY_BGCOLOR: aubergine
             lcd.RGB(0x00, 0x00, 0x00), -- OVERLAY_COLOR
             lcd.RGB(0xEF, 0xB4, 0xD0), -- SECONDARY_COLOR: dusty rose
-            lcd.RGB(0xB9, 0xE6, 0x80), -- SAFE_COLOR
+            lcd.RGB(0x32, 0x6B, 0x91), -- SAFE_COLOR (normal battery fill; contrasting text and outline)
             lcd.RGB(0x12, 0x0C, 0x1B), -- PAGE_BGCOLOR: deep violet
             lcd.RGB(0xFF, 0x7C, 0x87), -- ERROR_COLOR
             lcd.RGB(0xD0, 0xAF, 0xFF), -- ACTIVE_COLOR
@@ -461,7 +461,7 @@ local function init()
             lcd.RGB(0xFF, 0xF9, 0xD9), -- PRIMARY_BGCOLOR
             lcd.RGB(0x00, 0x00, 0x00), -- OVERLAY_COLOR
             lcd.RGB(0x49, 0x38, 0x00), -- SECONDARY_COLOR
-            lcd.RGB(0x17, 0x4C, 0x25), -- SAFE_COLOR
+            lcd.RGB(0x8E, 0xD9, 0x9C), -- SAFE_COLOR (normal battery fill; contrasting text and outline)
             lcd.RGB(0xFF, 0xFE, 0xF0), -- PAGE_BGCOLOR
             lcd.RGB(0x8E, 0x08, 0x20), -- ERROR_COLOR
             lcd.RGB(0x14, 0x14, 0x00), -- ACTIVE_COLOR
@@ -493,7 +493,7 @@ local function init()
             lcd.RGB(0xF5, 0xFA, 0xFF), -- PRIMARY_BGCOLOR
             lcd.RGB(0x00, 0x00, 0x00), -- OVERLAY_COLOR
             lcd.RGB(0x17, 0x34, 0x51), -- SECONDARY_COLOR
-            lcd.RGB(0x14, 0x50, 0x2A), -- SAFE_COLOR
+            lcd.RGB(0x8E, 0xD9, 0x9C), -- SAFE_COLOR (normal battery fill; contrasting text and outline)
             lcd.RGB(0xFF, 0xFF, 0xFF), -- PAGE_BGCOLOR
             lcd.RGB(0x93, 0x0E, 0x22), -- ERROR_COLOR
             lcd.RGB(0x00, 0x3B, 0x78), -- ACTIVE_COLOR
@@ -525,7 +525,7 @@ local function init()
             lcd.RGB(0xFF, 0xF7, 0xFA), -- PRIMARY_BGCOLOR
             lcd.RGB(0x00, 0x00, 0x00), -- OVERLAY_COLOR
             lcd.RGB(0x54, 0x20, 0x36), -- SECONDARY_COLOR
-            lcd.RGB(0x20, 0x49, 0x25), -- SAFE_COLOR
+            lcd.RGB(0x8E, 0xD9, 0x9C), -- SAFE_COLOR (normal battery fill; contrasting text and outline)
             lcd.RGB(0xFF, 0xFF, 0xFF), -- PAGE_BGCOLOR
             lcd.RGB(0x92, 0x0B, 0x16), -- ERROR_COLOR
             lcd.RGB(0x80, 0x0B, 0x39), -- ACTIVE_COLOR
@@ -557,7 +557,7 @@ local function init()
             lcd.RGB(0xF7, 0xFC, 0xE9), -- PRIMARY_BGCOLOR
             lcd.RGB(0x00, 0x00, 0x00), -- OVERLAY_COLOR
             lcd.RGB(0x28, 0x3C, 0x13), -- SECONDARY_COLOR
-            lcd.RGB(0x16, 0x4A, 0x28), -- SAFE_COLOR
+            lcd.RGB(0x8E, 0xD9, 0x9C), -- SAFE_COLOR (normal battery fill; contrasting text and outline)
             lcd.RGB(0xFF, 0xFF, 0xFF), -- PAGE_BGCOLOR
             lcd.RGB(0x92, 0x0C, 0x24), -- ERROR_COLOR
             lcd.RGB(0x20, 0x31, 0x78), -- ACTIVE_COLOR
@@ -589,7 +589,7 @@ local function init()
             lcd.RGB(0x08, 0x08, 0x08), -- PRIMARY_BGCOLOR
             lcd.RGB(0x00, 0x00, 0x00), -- OVERLAY_COLOR
             lcd.RGB(0xEB, 0xE2, 0xC5), -- SECONDARY_COLOR
-            lcd.RGB(0xA7, 0xFF, 0x91), -- SAFE_COLOR
+            lcd.RGB(0x3A, 0x7B, 0xA7), -- SAFE_COLOR (normal battery fill; contrasting text and outline)
             lcd.RGB(0x00, 0x00, 0x00), -- PAGE_BGCOLOR
             lcd.RGB(0xFF, 0x9F, 0xA7), -- ERROR_COLOR
             lcd.RGB(0xFF, 0xE0, 0x52), -- ACTIVE_COLOR
@@ -621,7 +621,7 @@ local function init()
             lcd.RGB(0x04, 0x10, 0x19), -- PRIMARY_BGCOLOR
             lcd.RGB(0x00, 0x00, 0x00), -- OVERLAY_COLOR
             lcd.RGB(0xB8, 0xE5, 0xF0), -- SECONDARY_COLOR
-            lcd.RGB(0xC4, 0xFF, 0x87), -- SAFE_COLOR
+            lcd.RGB(0x38, 0x77, 0xA2), -- SAFE_COLOR (normal battery fill; contrasting text and outline)
             lcd.RGB(0x01, 0x08, 0x0D), -- PAGE_BGCOLOR
             lcd.RGB(0xFF, 0xAD, 0xB8), -- ERROR_COLOR
             lcd.RGB(0x70, 0xF3, 0xFF), -- ACTIVE_COLOR
@@ -653,12 +653,12 @@ local function init()
             lcd.RGB(0x30, 0x27, 0x50), -- PRIMARY_BGCOLOR: deep violet
             lcd.RGB(0x00, 0x00, 0x00), -- OVERLAY_COLOR
             lcd.RGB(0xEE, 0xE1, 0xA2), -- SECONDARY_COLOR: cream
-            lcd.RGB(0xAD, 0xE6, 0xB2), -- SAFE_COLOR
+            lcd.RGB(0x27, 0x53, 0x71), -- SAFE_COLOR (normal battery fill; contrasting text and outline)
             lcd.RGB(0x24, 0x1D, 0x3B), -- PAGE_BGCOLOR
             lcd.RGB(0xFF, 0xA2, 0xA5), -- ERROR_COLOR: readable coral
             lcd.RGB(0xE3, 0xAA, 0x50), -- ACTIVE_COLOR: honey
             lcd.RGB(0xBD, 0xAC, 0xCC), -- INACTIVE_COLOR
-            lcd.RGB(0xDC, 0x78, 0xD9), -- BUTTON_BORDER_ACTIVE_COLOR
+            lcd.RGB(0xE2, 0x90, 0xE0), -- BUTTON_BORDER_ACTIVE_COLOR (battery outline; contrasts with header)
             lcd.RGB(0xCB, 0x5C, 0x5D), -- BUTTON_BORDER_COLOR: muted coral
             lcd.RGB(0xFF, 0xCF, 0x7D), -- WARNING_COLOR
             lcd.RGB(0x18, 0x2B, 0x1B), -- SAFE_CONTRASTING_COLOR
@@ -685,7 +685,7 @@ local function init()
             lcd.RGB(0x12, 0x1A, 0x50), -- PRIMARY_BGCOLOR
             lcd.RGB(0x00, 0x00, 0x00), -- OVERLAY_COLOR
             lcd.RGB(0xF3, 0xE7, 0x85), -- SECONDARY_COLOR: pale yellow
-            lcd.RGB(0x9D, 0xEB, 0xAE), -- SAFE_COLOR
+            lcd.RGB(0x32, 0x6B, 0x91), -- SAFE_COLOR (normal battery fill; contrasting text and outline)
             lcd.RGB(0x0B, 0x10, 0x35), -- PAGE_BGCOLOR
             lcd.RGB(0xFF, 0xA1, 0xA8), -- ERROR_COLOR
             lcd.RGB(0xEA, 0x5A, 0x00), -- ACTIVE_COLOR: orange
@@ -717,7 +717,7 @@ local function init()
             lcd.RGB(0xFF, 0xF7, 0xC7), -- PRIMARY_BGCOLOR: buttercream
             lcd.RGB(0x3C, 0x27, 0x28), -- OVERLAY_COLOR
             lcd.RGB(0x70, 0x3A, 0x33), -- SECONDARY_COLOR: terracotta ink
-            lcd.RGB(0x24, 0x63, 0x42), -- SAFE_COLOR
+            lcd.RGB(0x8E, 0xD9, 0x9C), -- SAFE_COLOR (normal battery fill; contrasting text and outline)
             lcd.RGB(0xFF, 0xFE, 0xFA), -- PAGE_BGCOLOR: warm white
             lcd.RGB(0x98, 0x18, 0x2B), -- ERROR_COLOR
             lcd.RGB(0x8B, 0x36, 0x2F), -- ACTIVE_COLOR: deep coral
@@ -749,7 +749,7 @@ local function init()
             lcd.RGB(0x0A, 0x13, 0x38), -- PRIMARY_BGCOLOR
             lcd.RGB(0x00, 0x00, 0x00), -- OVERLAY_COLOR
             lcd.RGB(0x7D, 0xEA, 0xF0), -- SECONDARY_COLOR
-            lcd.RGB(0x9E, 0xE5, 0xAE), -- SAFE_COLOR
+            lcd.RGB(0x31, 0x67, 0x8C), -- SAFE_COLOR (normal battery fill; contrasting text and outline)
             lcd.RGB(0x06, 0x0C, 0x26), -- PAGE_BGCOLOR
             lcd.RGB(0xFF, 0xA4, 0xAC), -- ERROR_COLOR
             lcd.RGB(0xFF, 0xFF, 0x00), -- ACTIVE_COLOR
@@ -781,7 +781,7 @@ local function init()
             lcd.RGB(0x10, 0x10, 0x44), -- PRIMARY_BGCOLOR
             lcd.RGB(0x00, 0x00, 0x00), -- OVERLAY_COLOR
             lcd.RGB(0xFF, 0xF2, 0x8C), -- SECONDARY_COLOR
-            lcd.RGB(0x9E, 0xE5, 0xAE), -- SAFE_COLOR
+            lcd.RGB(0x3A, 0x7B, 0xA7), -- SAFE_COLOR (normal battery fill; contrasting text and outline)
             lcd.RGB(0x09, 0x09, 0x2D), -- PAGE_BGCOLOR
             lcd.RGB(0xFF, 0xA4, 0xAC), -- ERROR_COLOR
             lcd.RGB(0x62, 0xE8, 0x62), -- ACTIVE_COLOR
@@ -813,7 +813,7 @@ local function init()
             lcd.RGB(0xFF, 0xF4, 0xE5), -- PRIMARY_BGCOLOR
             lcd.RGB(0x00, 0x00, 0x00), -- OVERLAY_COLOR
             lcd.RGB(0x74, 0x21, 0x3F), -- SECONDARY_COLOR
-            lcd.RGB(0x24, 0x60, 0x3D), -- SAFE_COLOR
+            lcd.RGB(0x8E, 0xD9, 0x9C), -- SAFE_COLOR (normal battery fill; contrasting text and outline)
             lcd.RGB(0xFF, 0xFB, 0xF4), -- PAGE_BGCOLOR
             lcd.RGB(0xA0, 0x14, 0x2B), -- ERROR_COLOR
             lcd.RGB(0x81, 0x13, 0x44), -- ACTIVE_COLOR
@@ -845,7 +845,7 @@ local function init()
             lcd.RGB(0x20, 0x10, 0x48), -- PRIMARY_BGCOLOR
             lcd.RGB(0x00, 0x00, 0x00), -- OVERLAY_COLOR
             lcd.RGB(0xFF, 0xE2, 0x5D), -- SECONDARY_COLOR
-            lcd.RGB(0x9E, 0xE5, 0xAE), -- SAFE_COLOR
+            lcd.RGB(0x2D, 0x5F, 0x81), -- SAFE_COLOR (normal battery fill; contrasting text and outline)
             lcd.RGB(0x14, 0x0A, 0x32), -- PAGE_BGCOLOR
             lcd.RGB(0xFF, 0xA4, 0xAC), -- ERROR_COLOR
             lcd.RGB(0xF4, 0x55, 0xB4), -- ACTIVE_COLOR
@@ -877,7 +877,7 @@ local function init()
             lcd.RGB(0xFF, 0xF6, 0xCC), -- PRIMARY_BGCOLOR
             lcd.RGB(0x00, 0x00, 0x00), -- OVERLAY_COLOR
             lcd.RGB(0x62, 0x59, 0x09), -- SECONDARY_COLOR
-            lcd.RGB(0x24, 0x60, 0x3D), -- SAFE_COLOR
+            lcd.RGB(0x90, 0xDA, 0x9E), -- SAFE_COLOR (normal battery fill; contrasting text and outline)
             lcd.RGB(0xFF, 0xFC, 0xED), -- PAGE_BGCOLOR
             lcd.RGB(0xA0, 0x14, 0x2B), -- ERROR_COLOR
             lcd.RGB(0xA3, 0x3F, 0x00), -- ACTIVE_COLOR
@@ -909,7 +909,7 @@ local function init()
             lcd.RGB(0x21, 0x0A, 0x3D), -- PRIMARY_BGCOLOR
             lcd.RGB(0x00, 0x00, 0x00), -- OVERLAY_COLOR
             lcd.RGB(0xFF, 0xB5, 0xDD), -- SECONDARY_COLOR
-            lcd.RGB(0x9E, 0xE5, 0xAE), -- SAFE_COLOR
+            lcd.RGB(0x37, 0x75, 0x9F), -- SAFE_COLOR (normal battery fill; contrasting text and outline)
             lcd.RGB(0x16, 0x05, 0x2B), -- PAGE_BGCOLOR
             lcd.RGB(0xFF, 0xA4, 0xAC), -- ERROR_COLOR
             lcd.RGB(0xFF, 0x79, 0xBE), -- ACTIVE_COLOR
@@ -942,7 +942,7 @@ local function init()
             lcd.RGB(0x17, 0x0D, 0x39), -- PRIMARY_BGCOLOR
             lcd.RGB(0x00, 0x00, 0x00), -- OVERLAY_COLOR
             lcd.RGB(0xFF, 0xC9, 0xEB), -- SECONDARY_COLOR
-            lcd.RGB(0xA4, 0xE8, 0xB2), -- SAFE_COLOR
+            lcd.RGB(0x36, 0x73, 0x9C), -- SAFE_COLOR (normal battery fill; contrasting text and outline)
             lcd.RGB(0x10, 0x10, 0x2B), -- PAGE_BGCOLOR
             lcd.RGB(0xFF, 0xAD, 0xB5), -- ERROR_COLOR
             lcd.RGB(0xED, 0x0B, 0x8E), -- ACTIVE_COLOR
@@ -974,7 +974,7 @@ local function init()
             lcd.RGB(0x09, 0x14, 0x35), -- PRIMARY_BGCOLOR
             lcd.RGB(0x00, 0x00, 0x00), -- OVERLAY_COLOR
             lcd.RGB(0xB8, 0xF4, 0xFF), -- SECONDARY_COLOR
-            lcd.RGB(0xA4, 0xE8, 0xB2), -- SAFE_COLOR
+            lcd.RGB(0x31, 0x67, 0x8C), -- SAFE_COLOR (normal battery fill; contrasting text and outline)
             lcd.RGB(0x05, 0x0B, 0x22), -- PAGE_BGCOLOR
             lcd.RGB(0xFF, 0xAD, 0xB5), -- ERROR_COLOR
             lcd.RGB(0xFF, 0xFF, 0x00), -- ACTIVE_COLOR
@@ -1006,7 +1006,7 @@ local function init()
             lcd.RGB(0x24, 0x26, 0x2D), -- PRIMARY_BGCOLOR
             lcd.RGB(0x00, 0x00, 0x00), -- OVERLAY_COLOR
             lcd.RGB(0xE6, 0xD4, 0x9A), -- SECONDARY_COLOR
-            lcd.RGB(0xA4, 0xE8, 0xB2), -- SAFE_COLOR
+            lcd.RGB(0x27, 0x53, 0x71), -- SAFE_COLOR (normal battery fill; contrasting text and outline)
             lcd.RGB(0x18, 0x1B, 0x22), -- PAGE_BGCOLOR
             lcd.RGB(0xFF, 0xAD, 0xB5), -- ERROR_COLOR
             lcd.RGB(0xC5, 0xC5, 0xC5), -- ACTIVE_COLOR
@@ -1038,7 +1038,7 @@ local function init()
             lcd.RGB(0x33, 0x20, 0x19), -- PRIMARY_BGCOLOR
             lcd.RGB(0x00, 0x00, 0x00), -- OVERLAY_COLOR
             lcd.RGB(0xEA, 0xD5, 0xC5), -- SECONDARY_COLOR
-            lcd.RGB(0xA4, 0xE8, 0xB2), -- SAFE_COLOR
+            lcd.RGB(0x31, 0x67, 0x8C), -- SAFE_COLOR (normal battery fill; contrasting text and outline)
             lcd.RGB(0x24, 0x15, 0x11), -- PAGE_BGCOLOR
             lcd.RGB(0xFF, 0xAD, 0xB5), -- ERROR_COLOR
             lcd.RGB(0xCF, 0xB5, 0x9D), -- ACTIVE_COLOR
@@ -1070,7 +1070,7 @@ local function init()
             lcd.RGB(0x10, 0x10, 0x3D), -- PRIMARY_BGCOLOR
             lcd.RGB(0x00, 0x00, 0x00), -- OVERLAY_COLOR
             lcd.RGB(0xFF, 0xF2, 0xA0), -- SECONDARY_COLOR
-            lcd.RGB(0xA4, 0xE8, 0xB2), -- SAFE_COLOR
+            lcd.RGB(0x3A, 0x7B, 0xA7), -- SAFE_COLOR (normal battery fill; contrasting text and outline)
             lcd.RGB(0x08, 0x08, 0x24), -- PAGE_BGCOLOR
             lcd.RGB(0xFF, 0xAD, 0xB5), -- ERROR_COLOR
             lcd.RGB(0x65, 0xEB, 0x65), -- ACTIVE_COLOR
@@ -1102,7 +1102,7 @@ local function init()
             lcd.RGB(0x21, 0x19, 0x4D), -- PRIMARY_BGCOLOR
             lcd.RGB(0x00, 0x00, 0x00), -- OVERLAY_COLOR
             lcd.RGB(0xDD, 0xE1, 0xFF), -- SECONDARY_COLOR
-            lcd.RGB(0xA4, 0xE8, 0xB2), -- SAFE_COLOR
+            lcd.RGB(0x37, 0x75, 0x9F), -- SAFE_COLOR (normal battery fill; contrasting text and outline)
             lcd.RGB(0x15, 0x10, 0x31), -- PAGE_BGCOLOR
             lcd.RGB(0xFF, 0xAD, 0xB5), -- ERROR_COLOR
             lcd.RGB(0xC5, 0xC9, 0xEF), -- ACTIVE_COLOR
@@ -1134,7 +1134,7 @@ local function init()
             lcd.RGB(0xE8, 0xD4, 0xC9), -- PRIMARY_BGCOLOR
             lcd.RGB(0x00, 0x00, 0x00), -- OVERLAY_COLOR
             lcd.RGB(0x80, 0x2A, 0x1E), -- SECONDARY_COLOR
-            lcd.RGB(0x23, 0x61, 0x3C), -- SAFE_COLOR
+            lcd.RGB(0x8E, 0xD9, 0x9C), -- SAFE_COLOR (normal battery fill; contrasting text and outline)
             lcd.RGB(0xF6, 0xEA, 0xE2), -- PAGE_BGCOLOR
             lcd.RGB(0x9C, 0x19, 0x2B), -- ERROR_COLOR
             lcd.RGB(0x31, 0x57, 0x3D), -- ACTIVE_COLOR
@@ -1166,7 +1166,7 @@ local function init()
             lcd.RGB(0xEE, 0xF0, 0xF3), -- PRIMARY_BGCOLOR
             lcd.RGB(0x00, 0x00, 0x00), -- OVERLAY_COLOR
             lcd.RGB(0x5D, 0x4B, 0x15), -- SECONDARY_COLOR
-            lcd.RGB(0x23, 0x61, 0x3C), -- SAFE_COLOR
+            lcd.RGB(0x8E, 0xD9, 0x9C), -- SAFE_COLOR (normal battery fill; contrasting text and outline)
             lcd.RGB(0xFA, 0xFA, 0xFB), -- PAGE_BGCOLOR
             lcd.RGB(0x9C, 0x19, 0x2B), -- ERROR_COLOR
             lcd.RGB(0x40, 0x51, 0x8C), -- ACTIVE_COLOR
@@ -1231,7 +1231,7 @@ local function init()
             lcd.RGB(0x27, 0x2B, 0x30), -- PRIMARY_BGCOLOR (matches header and page)
             lcd.RGB(0x55, 0x5D, 0x68), -- OVERLAY_COLOR
             lcd.RGB(0xFF, 0xBD, 0xC5), -- SECONDARY_COLOR
-            lcd.RGB(0x8E, 0xD9, 0x9C), -- SAFE_COLOR
+            lcd.RGB(0x37, 0x75, 0x9F), -- SAFE_COLOR (normal battery fill; contrasting text and outline)
             lcd.RGB(0x27, 0x2B, 0x30), -- PAGE_BGCOLOR
             lcd.RGB(0xFF, 0x9A, 0xAA), -- ERROR_COLOR
             lcd.RGB(0xFF, 0x92, 0x9F), -- ACTIVE_COLOR
@@ -1295,7 +1295,7 @@ local function init()
             lcd.RGB(0x27, 0x2B, 0x30), -- PRIMARY_BGCOLOR
             lcd.RGB(0x55, 0x5D, 0x68), -- OVERLAY_COLOR
             lcd.RGB(0xFF, 0x8F, 0xC8), -- SECONDARY_COLOR
-            lcd.RGB(0x8E, 0xD9, 0x9C), -- SAFE_COLOR
+            lcd.RGB(0x2F, 0x63, 0x87), -- SAFE_COLOR (normal battery fill; contrasting text and outline)
             lcd.RGB(0x27, 0x2B, 0x30), -- PAGE_BGCOLOR
             lcd.RGB(0xFF, 0x9A, 0xAA), -- ERROR_COLOR
             lcd.RGB(0xFF, 0x8F, 0xC8), -- ACTIVE_COLOR
@@ -1359,7 +1359,7 @@ local function init()
             lcd.RGB(0x29, 0x2F, 0x37), -- PRIMARY_BGCOLOR
             lcd.RGB(0x55, 0x61, 0x6F), -- OVERLAY_COLOR
             lcd.RGB(0x9B, 0xCA, 0xFF), -- SECONDARY_COLOR
-            lcd.RGB(0x8E, 0xD9, 0x9C), -- SAFE_COLOR
+            lcd.RGB(0x35, 0x6F, 0x97), -- SAFE_COLOR (normal battery fill; contrasting text and outline)
             lcd.RGB(0x29, 0x2F, 0x37), -- PAGE_BGCOLOR
             lcd.RGB(0xFF, 0x9A, 0xAA), -- ERROR_COLOR
             lcd.RGB(0x9B, 0xCA, 0xFF), -- ACTIVE_COLOR

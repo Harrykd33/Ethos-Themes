@@ -31,7 +31,7 @@ See [the theme preview](previews/stratos-700-xlpower.png).
 Rebuild the header with `.vscode/scripts/build_stratos_header.ps1`.
 
 **XL Stratos 700 Dark** adds charcoal grey header and page backgrounds, bright
-text and coral controls, and a pale battery outline around the light green fill.
+text and coral controls, and a pale battery outline around a blue battery fill.
 See [the dark preview](previews/xl-stratos-700-dark.png).
 Rebuild with `.vscode/scripts/build_stratos_header.ps1 -Dark`.
 
@@ -40,7 +40,8 @@ Rebuild with `.vscode/scripts/build_stratos_header.ps1 -Dark`.
 **XL Stratos 200** and **XL Stratos 200 Dark** take hot pink, neon yellow and
 silver from the supplied canopy photo. Both feature the helicopter in a header
 that matches the page background, with pink/yellow trim, a light green battery
-and a contrasting outline. Headers are opaque RGB for consistent radio colors.
+in the light variant and a blue battery in the dark variant, with contrasting
+outlines. Headers are opaque RGB for consistent radio colors.
 
 See the [light preview](previews/xl-stratos-200.png) and
 [dark preview](previews/xl-stratos-200-dark.png).
@@ -95,3 +96,21 @@ See [the theme preview](previews/rc-pilot-themes.png).
 To rebuild these themes, run `python .vscode/scripts/build_rc_pilot.py`, then
 run `.vscode/scripts/build_rc_pilot_headers.ps1` in PowerShell. The palette
 manifest and header source artwork are kept in `previews/`.
+
+## Battery contrast
+
+Normal battery fills use pale green with dark dashboard text and blue with
+light dashboard text. Text, warning fills, and critical fills are unchanged.
+Seven toolbar battery outlines were adjusted to remain visible against their
+existing header backgrounds.
+
+Run `python .vscode/scripts/check_battery_contrast.py` to check all 43 themes
+after Ethos RGB565 quantization. The normal dashboard text meets 4.5:1, and
+normal fills and outlines meet 3:1. The check samples the toolbar battery's
+header artwork region and checks the dashboard header background separately.
+See the [battery comparison](previews/battery-contrast.png) and
+[contrast measurements](previews/battery-contrast.csv).
+
+Warning and critical measurements are included for reference, not enforced:
+these colors are deliberately preserved, including existing contrast issues.
+The Kevd dashboard also uses its own fixed amber warning fill.
