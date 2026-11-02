@@ -1186,6 +1186,7 @@ local function init()
     system.registerTheme({
         key = "STR700",
         name = "XL Stratos 700",
+        -- studio-preview: previews/stratos-700-xlpower.png
         darkMode = false,
         roundButtons = true,
         focusStyle = "invert",
@@ -1218,6 +1219,7 @@ local function init()
     system.registerTheme({
         key = "STR7DK",
         name = "XL Stratos 700 Dark",
+        -- studio-preview: previews/xl-stratos-700-dark.png
         darkMode = true,
         roundButtons = true,
         focusStyle = "invert",
@@ -1250,6 +1252,7 @@ local function init()
     system.registerTheme({
         key = "STR200",
         name = "XL Stratos 200",
+        -- studio-preview: previews/xl-stratos-200.png
         darkMode = false,
         roundButtons = true,
         focusStyle = "invert",
@@ -1282,6 +1285,7 @@ local function init()
     system.registerTheme({
         key = "ST2DRK",
         name = "XL Stratos 200 Dark",
+        -- studio-preview: previews/xl-stratos-200-dark.png
         darkMode = true,
         roundButtons = true,
         focusStyle = "invert",
@@ -1314,6 +1318,7 @@ local function init()
     system.registerTheme({
         key = "SABPUM",
         name = "SAB IL Piuma",
+        -- studio-preview: previews/sab-il-piuma.png
         darkMode = false,
         roundButtons = true,
         focusStyle = "invert",
@@ -1346,6 +1351,7 @@ local function init()
     system.registerTheme({
         key = "SABPMD",
         name = "SAB IL Piuma Dark",
+        -- studio-preview: previews/sab-il-piuma-dark.png
         darkMode = true,
         roundButtons = true,
         focusStyle = "invert",
@@ -1378,6 +1384,7 @@ local function init()
     system.registerTheme({
         key = "AMnCD",
         name = "AMain Carbon Dark",
+        -- studio-preview: previews/amain-carbon-dark.png
         -- studio-branding: AMain
         darkMode = true,
         roundButtons = true,
@@ -1410,6 +1417,7 @@ local function init()
     system.registerTheme({
         key = "AMnBD",
         name = "AMain Cobalt Dark",
+        -- studio-preview: previews/amain-cobalt-dark.png
         -- studio-branding: AMain
         darkMode = true,
         roundButtons = true,
@@ -1442,6 +1450,7 @@ local function init()
     system.registerTheme({
         key = "AMnOL",
         name = "AMain Orange Light",
+        -- studio-preview: previews/amain-orange-light.png
         -- studio-branding: AMain
         darkMode = false,
         roundButtons = true,
@@ -1474,6 +1483,7 @@ local function init()
     system.registerTheme({
         key = "AMnBL",
         name = "AMain Blue Light",
+        -- studio-preview: previews/amain-blue-light.png
         -- studio-branding: AMain
         darkMode = false,
         roundButtons = true,

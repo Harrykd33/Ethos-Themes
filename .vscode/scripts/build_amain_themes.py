@@ -105,6 +105,7 @@ def build():
         previews.append(preview(theme, header(theme, logos[theme['dark']])))
         lines = ['    system.registerTheme({', f'        key = "{theme["key"]}",',
                  f'        name = "{theme["name"]}",',
+                 f'        -- studio-preview: previews/{theme["slug"]}.png',
                  '        -- studio-branding: AMain',
                  f'        darkMode = {str(theme["dark"]).lower()},',
                  '        roundButtons = true,', '        focusStyle = "invert",',

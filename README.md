@@ -97,6 +97,23 @@ To rebuild these themes, run `python .vscode/scripts/build_rc_pilot.py`, then
 run `.vscode/scripts/build_rc_pilot_headers.ps1` in PowerShell. The palette
 manifest and header source artwork are kept in `previews/`.
 
+## Preview image metadata
+
+Themes with individual preview images declare a repository-relative path inside
+their `system.registerTheme` block, for example:
+
+```lua
+-- studio-preview: previews/amain-cobalt-dark.png
+```
+
+The four AMain, four XL Stratos, and two SAB IL Piuma themes include these
+references. Theme Studio's planned Livery preview option should read
+`studio-preview` and load that path from the same repository revision as the
+theme catalog. These images are catalog assets in `previews/`, separate from the
+radio's installed `Themes/` assets; the comment alone does not add app support.
+Other comparison sheets, source artwork, and logo cutouts in `previews/` are not
+individual theme previews and are not assigned as such.
+
 ## AMain themes
 
 All four declare `studio-branding: AMain` for Theme Studio's **Branding > AMain** filter.
