@@ -1,7 +1,9 @@
 """Audit the colors used by the RFSuite dashboard and Ethos toolbar batteries.
 
-Only normal fill/outline checks are enforced. Warning and critical measurements
-are recorded for review; those colors are intentionally left unchanged.
+Normal fill/outline checks are enforced outside the five restored palettes.
+AMain theme palettes enforce battery text contrast; the user's exact outline
+color is measured and reported even when it falls below the outline target.
+Other themes' warning and critical colors are intentionally left unchanged.
 """
 import csv
 import re
@@ -10,6 +12,11 @@ from pathlib import Path
 from PIL import Image, ImageDraw, ImageFont
 
 ROOT = Path(__file__).resolve().parents[2]
+
+# The user explicitly requested these original palettes be restored.
+# Measure their contrast, but preserve the requested colors.
+RESTORED_THEMES = {'Teal RFs', 'Pu RFs', 'Ocean', 'Blu Rfs', 'Yelo Rfs'}
+AMAIN_OUTLINE = (0xF8, 0x74, 0x18)  # Explicit user override; preserve this exact color.
 
 
 def rendered(rgb):
@@ -66,19 +73,34 @@ def check():
             'toolbar outline/artwork': min(contrast(c[13], bg) for bg in pixels),
             'dashboard header outline/background': contrast(c[13], c[9]),
         }
+        restored = name.strip() in RESTORED_THEMES
+        exact_outline = name.startswith('AMain ')
         for label, ratio in values.items():
-            assert ratio >= (4.5 if label == 'text/fill' else 3), (name, label, ratio)
-        rows.append({'theme': name, 'normal fill': '#%02X%02X%02X' % c[8],
+            if not restored and (not exact_outline or label == 'text/fill'):
+                assert ratio >= (4.5 if label == 'text/fill' else 3), (name, label, ratio)
+        if exact_outline:
+            assert all(c[slot] == AMAIN_OUTLINE for slot in (7, 13, 14)), name
+            assert contrast(c[16], c[8]) >= 4.5, (name, 'normal contrasting details')
+            for slot in (10, 15):
+                assert contrast(c[0], c[slot]) >= 4.5, (name, slot, 'battery text')
+        rows.append({'theme': name, 'palette': ('original restored by request' if restored else
+                     'exact #F87418 outline by request' if exact_outline else 'contrast adjusted'),
+                     'normal fill': '#%02X%02X%02X' % c[8],
                      **{key: f'{value:.2f}' for key, value in values.items()},
                      'warning text/fill (unchanged)': f'{contrast(c[0], c[15]):.2f}',
-                     'critical text/fill (unchanged)': f'{contrast(c[0], c[10]):.2f}'})
+                     'critical text/fill (unchanged)': f'{contrast(c[0], c[10]):.2f}',
+                     'warning outline/fill': f'{contrast(c[7], c[15]):.2f}',
+                     'critical outline/fill': f'{contrast(c[7], c[10]):.2f}'})
     with (ROOT / 'previews/battery-contrast.csv').open('w', newline='', encoding='utf-8') as stream:
         writer = csv.DictWriter(stream, fieldnames=rows[0].keys())
         writer.writeheader()
         writer.writerows(rows)
     preview(items)
-    print(f'{len(rows)} themes passed normal battery text, fill/outline, and header outline checks.')
-    print('Warning/critical colors are unchanged; their measurements are informational.')
+    exact_count = sum(name.startswith('AMain ') for name, _, _ in items)
+    print(f'{len(rows) - len(RESTORED_THEMES) - exact_count} themes passed normal battery text, fill/outline, and header outline checks.')
+    print('Five original palettes restored by request; their measurements are informational.')
+    print('AMain battery text checks passed. Exact #F87418 outlines are preserved by request; some outline ratios are below 3:1 (see CSV).')
+    print('Existing themes\' warning/critical colors are unchanged; their measurements are informational.')
 
 
 def preview(items):

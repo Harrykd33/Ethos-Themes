@@ -97,20 +97,53 @@ To rebuild these themes, run `python .vscode/scripts/build_rc_pilot.py`, then
 run `.vscode/scripts/build_rc_pilot_headers.ps1` in PowerShell. The palette
 manifest and header source artwork are kept in `previews/`.
 
+## AMain themes
+
+Four themes combine AMain orange and charcoal with the supplied Fall Mowdown
+reference's cobalt blue, white, and silver:
+
+- **AMain Carbon Dark**: charcoal panels and orange controls.
+- **AMain Cobalt Dark**: deep navy and cobalt panels with orange controls.
+- **AMain Orange Light**: silver backgrounds and orange controls.
+- **AMain Blue Light**: cool white, pale blue panels, and cobalt controls.
+
+Each 784 x 50 header centers the AMain logo without a background panel. Light
+themes use the transparent logo; dark themes add a white outline around the
+logo's gear and lettering. Orange/white/blue racing trim runs below it.
+The source logo variants retain transparency; finished headers are opaque RGB
+for consistent Ethos rendering. Dashboard and toolbar outlines use a shade of
+AMain orange, exactly `#F87418`, as requested. Battery fills use medium blue with light text in the
+dark themes and pale blue with dark text in the light themes. Warning and
+critical fills are unchanged.
+
+See the [four-theme preview](previews/amain-themes.png).
+Rebuild with `python .vscode/scripts/build_amain_themes.py`; the original logo
+and palette manifest are in `previews/`. The matching logo asset was obtained
+from [AMain Hobbies](https://www.amainhobbies.com/content/skins/amainhobbies/images/site-logo.png).
+
 ## Battery contrast
 
-Normal battery fills use pale green with dark dashboard text and blue with
-light dashboard text. Text, warning fills, and critical fills are unchanged.
-Seven toolbar battery outlines were adjusted to remain visible against their
+Normal battery fills use pale green or pale blue with dark dashboard text and
+blue with light dashboard text. Existing themes' text, warning fills, and
+critical fills are unchanged.
+Two toolbar battery outlines were adjusted to remain visible against their
 existing header backgrounds.
 
-Run `python .vscode/scripts/check_battery_contrast.py` to check all 43 themes
-after Ethos RGB565 quantization. The normal dashboard text meets 4.5:1, and
-normal fills and outlines meet 3:1. The check samples the toolbar battery's
+Teal RFs, Pu RFs, Ocean, Blu Rfs, and Yelo Rfs retain their original colors
+at the user's request, including their original battery fills and outlines.
+
+Run `python .vscode/scripts/check_battery_contrast.py` to check all 47 themes
+after Ethos RGB565 quantization. The 38 contrast-adjusted themes meet 4.5:1 for
+normal dashboard text and 3:1 for normal fills and outlines. The four AMain themes
+meet the battery text target, while preserving the explicitly requested
+`#F87418` outline; some outline contrasts are below 3:1. The five restored
+palettes are measured for reference without enforcing these targets.
+The check samples the toolbar battery's
 header artwork region and checks the dashboard header background separately.
 See the [battery comparison](previews/battery-contrast.png) and
 [contrast measurements](previews/battery-contrast.csv).
 
-Warning and critical measurements are included for reference, not enforced:
-these colors are deliberately preserved, including existing contrast issues.
+AMain theme palette warning and critical fills also meet 4.5:1 text contrast.
+Outline measurements are reported for all three battery states. Existing themes' warning and critical measurements are included
+for reference: these colors are preserved, including existing contrast issues.
 The Kevd dashboard also uses its own fixed amber warning fill.

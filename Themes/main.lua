@@ -46,12 +46,12 @@ local function init()
             lcd.RGB(0xBD, 0xE6, 0xD6), -- PRIMARY_BGCOLOR
             lcd.GREY(0x60),            -- OVERLAY_COLOR
             lcd.RGB(255, 34, 10),      -- SECONDARY_COLOR
-            lcd.RGB(0xD0, 0xEF, 0xD5), -- SAFE_COLOR (normal battery fill; contrasting text and outline)
+            lcd.RGB(65, 217, 30), -- SAFE_COLOR
             lcd.RGB(242, 240, 232),    -- PAGE_BGCOLOR
             lcd.RGB(0x8B, 0x00, 0x15), -- ERROR_COLOR (system critical: red)
             lcd.RGB(0x08, 0x91, 0x08), -- ACTIVE_COLOR
             lcd.RGB(0x3E, 0x3A, 0x2B), -- INACTIVE_COLOR
-            lcd.RGB(0x47, 0x33, 0x76), -- BUTTON_BORDER_ACTIVE_COLOR (battery outline; contrasts with header)
+            lcd.RGB(0x81, 0x5C, 0xD6), -- BUTTON_BORDER_ACTIVE_COLOR xCF
             lcd.RGB(118, 145, 137),    -- BUTTON_BORDER_COLOR
             lcd.RGB(0x8A, 0x43, 0x00), -- WARNING_COLOR (system warning: amber)
             lcd.RGB(0, 0, 0),          -- SAFE_CONTRASTING_COLOR
@@ -76,12 +76,12 @@ local function init()
         lcd.RGB(255, 255, 255),    -- PRIMARY_BGCOLOR (White #ffffff)
         lcd.GREY(0x60),            -- OVERLAY_COLOR
         lcd.RGB(250, 39, 0),    -- SECONDARY_color (Glossy Coral #FA8567)
-        lcd.RGB(0xE8, 0xF7, 0xEA), -- SAFE_COLOR (normal battery fill; contrasting text and outline)
+        lcd.RGB(53, 121, 248), -- SAFE_COLOR (white)
         lcd.RGB(240, 193, 165),    -- PAGE_BGCOLOR (Light Sky Blue #B2E4FF)
         lcd.RGB(0x8B, 0x00, 0x15), -- ERROR_COLOR (system critical: red)
         lcd.RGB(0x00, 0xFF, 0xCC), -- ACTIVE_COLOR (cyan n�on)
         lcd.RGB(0xC4, 0xAE, 0xFF), -- INACTIVE_COLOR (lavande)
-        lcd.RGB(0xBF, 0x00, 0x99), -- BUTTON_BORDER_ACTIVE_COLOR (battery outline; contrasts with header)
+        lcd.RGB(0xFF, 0x00, 0xCC), -- BUTTON_BORDER_ACTIVE_COLOR (magenta n�on)
         lcd.RGB(250, 39, 0),      -- BUTTON_BORDER_COLOR (Mostly desaturated dark blue #55677c)
         lcd.RGB(0x8A, 0x43, 0x00), -- WARNING_COLOR (system warning: amber)
         lcd.RGB(0, 0, 0),          -- SAFE_CONTRASTING_COLOR
@@ -105,12 +105,12 @@ local function init()
             lcd.RGB(0x18, 0x20, 0x40), -- PRIMARY_BGCOLOR (bleu nuit � lum ~0.016 = Dracula)
             BLACK,                     -- OVERLAY_COLOR
             lcd.RGB(0x88, 0xBB, 0xDD), -- SECONDARY_COLOR (bleu ciel lisible)
-            lcd.RGB(0x20, 0x43, 0x5B), -- SAFE_COLOR (normal battery fill; contrasting text and outline)
+            lcd.RGB(0x84, 0xC3, 0x0F), -- SAFE_COLOR (vert ethos)
             lcd.RGB(0x0E, 0x18, 0x30), -- PAGE_BGCOLOR (plus sombre que PRIMARY)
             lcd.RGB(0xFF, 0x5A, 0x68), -- ERROR_COLOR (system critical: red)
             lcd.RGB(0x44, 0x88, 0xFF), -- ACTIVE_COLOR (bleu royal)
             lcd.RGB(0x2A, 0x50, 0x80), -- INACTIVE_COLOR (bleu terne)
-            lcd.RGB(0x50, 0x90, 0xFF), -- BUTTON_BORDER_ACTIVE_COLOR (battery outline; contrasts with header)
+            lcd.RGB(0x44, 0x88, 0xFF), -- BUTTON_BORDER_ACTIVE_COLOR
             lcd.RGB(0x2C, 0x44, 0x68), -- BUTTON_BORDER_COLOR
             lcd.RGB(0xFF, 0xB3, 0x47), -- WARNING_COLOR (system warning: amber)
             lcd.RGB(0, 0, 0),          -- SAFE_CONTRASTING_COLOR
@@ -141,7 +141,7 @@ local function init()
         lcd.RGB(0x8B, 0x00, 0x15), -- ERROR_COLOR (system critical: red)
         lcd.RGB(0x00, 0xFF, 0xCC), -- ACTIVE_COLOR (cyan n�on)
         lcd.RGB(0xC4, 0xAE, 0xFF), -- INACTIVE_COLOR (lavande)
-        lcd.RGB(0x20, 0x33, 0x8A), -- BUTTON_BORDER_ACTIVE_COLOR (battery outline; contrasts with header)
+        lcd.RGB(49, 80, 214),      -- BUTTON_BORDER_ACTIVE_COLOR (Top bar batt icon
         lcd.RGB(49, 80, 214),      -- BUTTON_BORDER_COLOR (Mostly desaturated dark blue #55677c)
         lcd.RGB(0x8A, 0x43, 0x00), -- WARNING_COLOR (system warning: amber)
         lcd.RGB(0, 0, 0),          -- SAFE_CONTRASTING_COLOR
@@ -166,12 +166,12 @@ local function init()
         lcd.RGB(244, 211, 56),     -- PRIMARY_BGCOLOR (Light Sky Blue #678bc1)
         lcd.GREY(0x60),            -- OVERLAY_COLOR
         lcd.RGB(227, 39, 39),      -- SECONDARY_color (Glossy Coral #FA8567)88, 109, 226
-        lcd.RGB(0xC5, 0xEC, 0xCD), -- SAFE_COLOR (normal battery fill; contrasting text and outline)
+        lcd.RGB(32, 176, 212), -- SAFE_COLOR (white)
         lcd.RGB(43, 189, 97),    -- PAGE_BGCOLOR (Light Sky Blue #B2E4FF)
         lcd.RGB(0x8B, 0x00, 0x15), -- ERROR_COLOR (system critical: red)
         lcd.RGB(0x00, 0xFF, 0xCC), -- ACTIVE_COLOR (cyan n�on)
         lcd.RGB(0xC4, 0xAE, 0xFF), -- INACTIVE_COLOR (lavande)
-        lcd.RGB(0xA7, 0x00, 0x00), -- BUTTON_BORDER_ACTIVE_COLOR (battery outline; contrasts with header)
+        lcd.RGB(255, 0, 0),      -- BUTTON_BORDER_ACTIVE_COLOR (Top bar batt icon
         lcd.RGB(227, 39, 39),      -- BUTTON_BORDER_COLOR (Mostly desaturated dark blue #55677c)
         lcd.RGB(0x8A, 0x43, 0x00), -- WARNING_COLOR (system warning: amber)
         lcd.RGB(0, 0, 0),          -- SAFE_CONTRASTING_COLOR
@@ -1373,6 +1373,132 @@ local function init()
         toolbarBackground = lcd.loadBitmap("header-sab-il-piuma-dark.png"),
         toolbarLogo = "none",
     })
+
+    -- BEGIN AMAIN THEMES
+    system.registerTheme({
+        key = "AMnCD",
+        name = "AMain Carbon Dark",
+        darkMode = true,
+        roundButtons = true,
+        focusStyle = "invert",
+        borderWidth = 3,
+        colors = {
+            lcd.RGB(0xF7, 0xFA, 0xFC), -- PRIMARY_COLOR
+            lcd.RGB(0x29, 0x37, 0x44), -- SECONDARY_BGCOLOR
+            lcd.RGB(0xFF, 0x68, 0x1B), -- HIGHLIGHT_COLOR
+            lcd.RGB(0x17, 0x2A, 0x35), -- HIGHLIGHT_INVERT_COLOR
+            lcd.RGB(0x87, 0x99, 0xAA), -- DISABLE_COLOR
+            lcd.RGB(0x13, 0x1C, 0x25), -- PRIMARY_BGCOLOR
+            lcd.RGB(0x00, 0x00, 0x00), -- OVERLAY_COLOR
+            lcd.RGB(0xF8, 0x74, 0x18), -- SECONDARY_COLOR
+            lcd.RGB(0x32, 0x6C, 0x96), -- SAFE_COLOR
+            lcd.RGB(0x13, 0x1C, 0x25), -- PAGE_BGCOLOR
+            lcd.RGB(0xB7, 0x3D, 0x4B), -- ERROR_COLOR
+            lcd.RGB(0xFF, 0x68, 0x1B), -- ACTIVE_COLOR
+            lcd.RGB(0x91, 0xA4, 0xB7), -- INACTIVE_COLOR
+            lcd.RGB(0xF8, 0x74, 0x18), -- BUTTON_BORDER_ACTIVE_COLOR
+            lcd.RGB(0xF8, 0x74, 0x18), -- BUTTON_BORDER_COLOR
+            lcd.RGB(0x98, 0x60, 0x00), -- WARNING_COLOR
+            lcd.RGB(0xF7, 0xFA, 0xFC), -- SAFE_CONTRASTING_COLOR
+            lcd.RGB(0x13, 0x1C, 0x25), -- TOPLCD_BGCOLOR
+        },
+        toolbarBackground = lcd.loadBitmap("header-amain-carbon-dark.png"),
+        toolbarLogo = "none",
+    })
+
+    system.registerTheme({
+        key = "AMnBD",
+        name = "AMain Cobalt Dark",
+        darkMode = true,
+        roundButtons = true,
+        focusStyle = "invert",
+        borderWidth = 3,
+        colors = {
+            lcd.RGB(0xFF, 0xFF, 0xFF), -- PRIMARY_COLOR
+            lcd.RGB(0x18, 0x3C, 0x68), -- SECONDARY_BGCOLOR
+            lcd.RGB(0xFF, 0x77, 0x1F), -- HIGHLIGHT_COLOR
+            lcd.RGB(0x10, 0x29, 0x40), -- HIGHLIGHT_INVERT_COLOR
+            lcd.RGB(0x8B, 0xA8, 0xC9), -- DISABLE_COLOR
+            lcd.RGB(0x09, 0x1D, 0x3B), -- PRIMARY_BGCOLOR
+            lcd.RGB(0x00, 0x00, 0x00), -- OVERLAY_COLOR
+            lcd.RGB(0xF8, 0x74, 0x18), -- SECONDARY_COLOR
+            lcd.RGB(0x2F, 0x63, 0x87), -- SAFE_COLOR
+            lcd.RGB(0x09, 0x1D, 0x3B), -- PAGE_BGCOLOR
+            lcd.RGB(0xB7, 0x3D, 0x4B), -- ERROR_COLOR
+            lcd.RGB(0x47, 0x9D, 0xFF), -- ACTIVE_COLOR
+            lcd.RGB(0x9A, 0xB6, 0xD8), -- INACTIVE_COLOR
+            lcd.RGB(0xF8, 0x74, 0x18), -- BUTTON_BORDER_ACTIVE_COLOR
+            lcd.RGB(0xF8, 0x74, 0x18), -- BUTTON_BORDER_COLOR
+            lcd.RGB(0x98, 0x60, 0x00), -- WARNING_COLOR
+            lcd.RGB(0xFF, 0xFF, 0xFF), -- SAFE_CONTRASTING_COLOR
+            lcd.RGB(0x09, 0x1D, 0x3B), -- TOPLCD_BGCOLOR
+        },
+        toolbarBackground = lcd.loadBitmap("header-amain-cobalt-dark.png"),
+        toolbarLogo = "none",
+    })
+
+    system.registerTheme({
+        key = "AMnOL",
+        name = "AMain Orange Light",
+        darkMode = false,
+        roundButtons = true,
+        focusStyle = "invert",
+        borderWidth = 3,
+        colors = {
+            lcd.RGB(0x17, 0x2A, 0x35), -- PRIMARY_COLOR
+            lcd.RGB(0xDC, 0xE3, 0xE8), -- SECONDARY_BGCOLOR
+            lcd.RGB(0xFF, 0x68, 0x1B), -- HIGHLIGHT_COLOR
+            lcd.RGB(0x17, 0x2A, 0x35), -- HIGHLIGHT_INVERT_COLOR
+            lcd.RGB(0x73, 0x81, 0x8C), -- DISABLE_COLOR
+            lcd.RGB(0xF1, 0xF4, 0xF6), -- PRIMARY_BGCOLOR
+            lcd.RGB(0x67, 0x78, 0x86), -- OVERLAY_COLOR
+            lcd.RGB(0xF8, 0x74, 0x18), -- SECONDARY_COLOR
+            lcd.RGB(0xA2, 0xD2, 0xF0), -- SAFE_COLOR
+            lcd.RGB(0xF1, 0xF4, 0xF6), -- PAGE_BGCOLOR
+            lcd.RGB(0xF5, 0x8C, 0x91), -- ERROR_COLOR
+            lcd.RGB(0xD9, 0x4A, 0x00), -- ACTIVE_COLOR
+            lcd.RGB(0x65, 0x76, 0x87), -- INACTIVE_COLOR
+            lcd.RGB(0xF8, 0x74, 0x18), -- BUTTON_BORDER_ACTIVE_COLOR
+            lcd.RGB(0xF8, 0x74, 0x18), -- BUTTON_BORDER_COLOR
+            lcd.RGB(0xF2, 0xBA, 0x59), -- WARNING_COLOR
+            lcd.RGB(0x17, 0x2A, 0x35), -- SAFE_CONTRASTING_COLOR
+            lcd.RGB(0xF1, 0xF4, 0xF6), -- TOPLCD_BGCOLOR
+        },
+        toolbarBackground = lcd.loadBitmap("header-amain-orange-light.png"),
+        toolbarLogo = "none",
+    })
+
+    system.registerTheme({
+        key = "AMnBL",
+        name = "AMain Blue Light",
+        darkMode = false,
+        roundButtons = true,
+        focusStyle = "invert",
+        borderWidth = 3,
+        colors = {
+            lcd.RGB(0x10, 0x29, 0x40), -- PRIMARY_COLOR
+            lcd.RGB(0xD4, 0xE5, 0xF5), -- SECONDARY_BGCOLOR
+            lcd.RGB(0x07, 0x56, 0xAC), -- HIGHLIGHT_COLOR
+            lcd.RGB(0xFF, 0xFF, 0xFF), -- HIGHLIGHT_INVERT_COLOR
+            lcd.RGB(0x6E, 0x88, 0xA0), -- DISABLE_COLOR
+            lcd.RGB(0xF4, 0xF9, 0xFE), -- PRIMARY_BGCOLOR
+            lcd.RGB(0x66, 0x84, 0xA0), -- OVERLAY_COLOR
+            lcd.RGB(0xF8, 0x74, 0x18), -- SECONDARY_COLOR
+            lcd.RGB(0xAD, 0xD9, 0xF5), -- SAFE_COLOR
+            lcd.RGB(0xF4, 0xF9, 0xFE), -- PAGE_BGCOLOR
+            lcd.RGB(0xF5, 0x8C, 0x91), -- ERROR_COLOR
+            lcd.RGB(0x07, 0x56, 0xAC), -- ACTIVE_COLOR
+            lcd.RGB(0x5D, 0x77, 0x93), -- INACTIVE_COLOR
+            lcd.RGB(0xF8, 0x74, 0x18), -- BUTTON_BORDER_ACTIVE_COLOR
+            lcd.RGB(0xF8, 0x74, 0x18), -- BUTTON_BORDER_COLOR
+            lcd.RGB(0xF2, 0xBA, 0x59), -- WARNING_COLOR
+            lcd.RGB(0x10, 0x29, 0x40), -- SAFE_CONTRASTING_COLOR
+            lcd.RGB(0xF4, 0xF9, 0xFE), -- TOPLCD_BGCOLOR
+        },
+        toolbarBackground = lcd.loadBitmap("header-amain-blue-light.png"),
+        toolbarLogo = "none",
+    })
+    -- END AMAIN THEMES
 
 end
 
