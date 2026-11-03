@@ -1,3 +1,11 @@
+-- Share the registered toolbar bitmap when RFSuite is installed.
+-- Keep the standard registration path when running without RFSuite.
+local system = system
+local headerBridge = loadfile("SCRIPTS:/rfsuite/widgets/dashboard/themes/kevd/header_bridge.lua")
+if headerBridge then
+    system = setmetatable({registerTheme = headerBridge().registerTheme}, {__index = system})
+end
+
 -- Ethos 26.x palette: ERROR_COLOR slot 11, WARNING_COLOR slot 16,
 -- SAFE_CONTRASTING_COLOR slot 17, TOPLCD_BGCOLOR slot 18.
 local function init()
