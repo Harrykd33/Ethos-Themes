@@ -1,10 +1,14 @@
--- Share the registered toolbar bitmap when RFSuite is installed.
--- Keep the standard registration path when running without RFSuite.
+-- Share every theme's toolbar bitmap with the RFSuite KevD dashboard.
+-- Reuse its registry if already loaded, so both sides see the same images.
 local system = system
-local headerBridge = loadfile("SCRIPTS:/rfsuite/widgets/dashboard/themes/kevd/header_bridge.lua")
-    or loadfile("SCRIPTS:/Themes/header_bridge.lua")
+local headerBridge = package.loaded["rfsuite.widgets.dashboard.themes.kevd.header_bridge"]
+if not headerBridge then
+    local loader = loadfile("SCRIPTS:/rfsuite/widgets/dashboard/themes/kevd/header_bridge.lua")
+        or loadfile("SCRIPTS:/Themes/header_bridge.lua")
+    if loader then headerBridge = loader() end
+end
 if headerBridge then
-    system = setmetatable({registerTheme = headerBridge().registerTheme}, {__index = system})
+    system = setmetatable({registerTheme = headerBridge.registerTheme}, {__index = system})
 end
 
 -- Ethos 26.x palette: ERROR_COLOR slot 11, WARNING_COLOR slot 16,
