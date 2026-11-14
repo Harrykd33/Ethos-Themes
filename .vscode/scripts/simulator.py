@@ -23,6 +23,8 @@ def install_themes():
         if asset.is_file() and asset.suffix.lower() in {".lua", ".png"}:
             shutil.copy2(asset, destination / asset.name)
     (destination / "main.luac").unlink(missing_ok=True)
+    from install_dashboard_headers import install
+    install(destination.parent)
     print(f"Installed themes in {destination}")
 
 

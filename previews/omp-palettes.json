@@ -1,0 +1,181 @@
+[
+  {
+    "name": "Vibrant Fest",
+    "palette": [
+      "FBD071",
+      "FC4AA1",
+      "322D60",
+      "75B2A2"
+    ],
+    "colors": [
+      "FFFFFF",
+      "454074",
+      "FBD071",
+      "211D40",
+      "A6A5B3",
+      "322D60",
+      "000000",
+      "FFFFFF",
+      "244E59",
+      "322D60",
+      "702C3D",
+      "75B2A2",
+      "A6A5B3",
+      "FFFFFF",
+      "534B80",
+      "684000",
+      "FFFFFF",
+      "322D60"
+    ],
+    "battery_contrast": {
+      "header outline": 12.503314419069017,
+      "normal detail PRIMARY_COLOR": 9.24,
+      "normal detail SECONDARY_COLOR": 9.24,
+      "normal detail BUTTON_BORDER_ACTIVE_COLOR": 9.24,
+      "normal detail SAFE_CONTRASTING_COLOR": 9.24,
+      "warning detail PRIMARY_COLOR": 8.84,
+      "warning detail SECONDARY_COLOR": 8.84,
+      "warning detail BUTTON_BORDER_ACTIVE_COLOR": 8.84,
+      "warning detail SAFE_CONTRASTING_COLOR": 8.84,
+      "critical detail PRIMARY_COLOR": 9.72,
+      "critical detail SECONDARY_COLOR": 9.72,
+      "critical detail BUTTON_BORDER_ACTIVE_COLOR": 9.72,
+      "critical detail SAFE_CONTRASTING_COLOR": 9.72
+    }
+  },
+  {
+    "name": "Charcoal Silence",
+    "palette": [
+      "48465B",
+      "8E7073",
+      "A6A5A1",
+      "838486",
+      "272727"
+    ],
+    "colors": [
+      "FFFFFF",
+      "48465B",
+      "DDD2D1",
+      "272727",
+      "A6A5B3",
+      "272727",
+      "000000",
+      "FFFFFF",
+      "244E59",
+      "272727",
+      "702C3D",
+      "DDD2D1",
+      "A6A5B3",
+      "FFFFFF",
+      "8E7073",
+      "684000",
+      "FFFFFF",
+      "272727"
+    ],
+    "battery_contrast": {
+      "header outline": 15.62766574755287,
+      "normal detail PRIMARY_COLOR": 9.24,
+      "normal detail SECONDARY_COLOR": 9.24,
+      "normal detail BUTTON_BORDER_ACTIVE_COLOR": 9.24,
+      "normal detail SAFE_CONTRASTING_COLOR": 9.24,
+      "warning detail PRIMARY_COLOR": 8.84,
+      "warning detail SECONDARY_COLOR": 8.84,
+      "warning detail BUTTON_BORDER_ACTIVE_COLOR": 8.84,
+      "warning detail SAFE_CONTRASTING_COLOR": 8.84,
+      "critical detail PRIMARY_COLOR": 9.72,
+      "critical detail SECONDARY_COLOR": 9.72,
+      "critical detail BUTTON_BORDER_ACTIVE_COLOR": 9.72,
+      "critical detail SAFE_CONTRASTING_COLOR": 9.72
+    }
+  },
+  {
+    "name": "Soft Macaron",
+    "palette": [
+      "F2EFA4",
+      "F8C3A6",
+      "D287B5",
+      "BDAAD0",
+      "EDE8DC"
+    ],
+    "colors": [
+      "302B40",
+      "F2EFA4",
+      "BDAAD0",
+      "302B40",
+      "786B80",
+      "EDE8DC",
+      "000000",
+      "302B40",
+      "C5E5CE",
+      "EDE8DC",
+      "F1B1BE",
+      "694873",
+      "786B80",
+      "302B40",
+      "BDAAD0",
+      "F8C3A6",
+      "302B40",
+      "EDE8DC"
+    ],
+    "battery_contrast": {
+      "header outline": 11.55258357853056,
+      "normal detail PRIMARY_COLOR": 10.31,
+      "normal detail SECONDARY_COLOR": 10.31,
+      "normal detail BUTTON_BORDER_ACTIVE_COLOR": 10.31,
+      "normal detail SAFE_CONTRASTING_COLOR": 10.31,
+      "warning detail PRIMARY_COLOR": 8.9,
+      "warning detail SECONDARY_COLOR": 8.9,
+      "warning detail BUTTON_BORDER_ACTIVE_COLOR": 8.9,
+      "warning detail SAFE_CONTRASTING_COLOR": 8.9,
+      "critical detail PRIMARY_COLOR": 7.93,
+      "critical detail SECONDARY_COLOR": 7.93,
+      "critical detail BUTTON_BORDER_ACTIVE_COLOR": 7.93,
+      "critical detail SAFE_CONTRASTING_COLOR": 7.93
+    }
+  },
+  {
+    "name": "Blue Ion",
+    "palette": [
+      "36E1ED",
+      "28BFEF",
+      "2960FA",
+      "2824C9",
+      "3D109E"
+    ],
+    "colors": [
+      "FFFFFF",
+      "321877",
+      "36E1ED",
+      "16103C",
+      "A6A5B3",
+      "211050",
+      "000000",
+      "FFFFFF",
+      "244E59",
+      "211050",
+      "702C3D",
+      "36E1ED",
+      "A6A5B3",
+      "FFFFFF",
+      "2960FA",
+      "684000",
+      "FFFFFF",
+      "211050"
+    ],
+    "battery_contrast": {
+      "header outline": 16.637298677604207,
+      "normal detail PRIMARY_COLOR": 9.24,
+      "normal detail SECONDARY_COLOR": 9.24,
+      "normal detail BUTTON_BORDER_ACTIVE_COLOR": 9.24,
+      "normal detail SAFE_CONTRASTING_COLOR": 9.24,
+      "warning detail PRIMARY_COLOR": 8.84,
+      "warning detail SECONDARY_COLOR": 8.84,
+      "warning detail BUTTON_BORDER_ACTIVE_COLOR": 8.84,
+      "warning detail SAFE_CONTRASTING_COLOR": 8.84,
+      "critical detail PRIMARY_COLOR": 9.72,
+      "critical detail SECONDARY_COLOR": 9.72,
+      "critical detail BUTTON_BORDER_ACTIVE_COLOR": 9.72,
+      "critical detail SAFE_CONTRASTING_COLOR": 9.72
+    }
+  }
+]

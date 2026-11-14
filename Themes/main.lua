@@ -2,6 +2,7 @@
 -- Keep the standard registration path when running without RFSuite.
 local system = system
 local headerBridge = loadfile("SCRIPTS:/rfsuite/widgets/dashboard/themes/kevd/header_bridge.lua")
+    or loadfile("SCRIPTS:/Themes/header_bridge.lua")
 if headerBridge then
     system = setmetatable({registerTheme = headerBridge().registerTheme}, {__index = system})
 end
@@ -1558,6 +1559,140 @@ local function init()
         toolbarLogo = "none",
     })
     -- END AMAIN THEMES
+
+    -- BEGIN OMP PALETTE THEMES
+    system.registerTheme({
+        key = "OMPP1",
+        name = "Vibrant Fest",
+        -- studio-branding: Vibrant Fest
+        -- studio-preview: previews/vibrant-fest.png
+        darkMode = true,
+        roundButtons = true,
+        focusStyle = "invert",
+        borderWidth = 3,
+        colors = {
+            lcd.RGB(0xFF, 0xFF, 0xFF), -- PRIMARY_COLOR
+            lcd.RGB(0x45, 0x40, 0x74), -- SECONDARY_BGCOLOR
+            lcd.RGB(0xFB, 0xD0, 0x71), -- HIGHLIGHT_COLOR
+            lcd.RGB(0x21, 0x1D, 0x40), -- HIGHLIGHT_INVERT_COLOR
+            lcd.RGB(0xA6, 0xA5, 0xB3), -- DISABLE_COLOR
+            lcd.RGB(0x32, 0x2D, 0x60), -- PRIMARY_BGCOLOR
+            lcd.RGB(0x00, 0x00, 0x00), -- OVERLAY_COLOR
+            lcd.RGB(0xFF, 0xFF, 0xFF), -- SECONDARY_COLOR
+            lcd.RGB(0x24, 0x4E, 0x59), -- SAFE_COLOR
+            lcd.RGB(0x32, 0x2D, 0x60), -- PAGE_BGCOLOR
+            lcd.RGB(0x70, 0x2C, 0x3D), -- ERROR_COLOR
+            lcd.RGB(0x75, 0xB2, 0xA2), -- ACTIVE_COLOR
+            lcd.RGB(0xA6, 0xA5, 0xB3), -- INACTIVE_COLOR
+            lcd.RGB(0xFF, 0xFF, 0xFF), -- BUTTON_BORDER_ACTIVE_COLOR
+            lcd.RGB(0x53, 0x4B, 0x80), -- BUTTON_BORDER_COLOR
+            lcd.RGB(0x68, 0x40, 0x00), -- WARNING_COLOR
+            lcd.RGB(0xFF, 0xFF, 0xFF), -- SAFE_CONTRASTING_COLOR
+            lcd.RGB(0x32, 0x2D, 0x60), -- TOPLCD_BGCOLOR
+        },
+        toolbarBackground = lcd.loadBitmap("header-vibrant-fest.png"),
+        toolbarLogo = "none",
+    })
+
+    system.registerTheme({
+        key = "OMPP2",
+        name = "Charcoal Silence",
+        -- studio-branding: Charcoal Silence
+        -- studio-preview: previews/charcoal-silence.png
+        darkMode = true,
+        roundButtons = true,
+        focusStyle = "invert",
+        borderWidth = 3,
+        colors = {
+            lcd.RGB(0xFF, 0xFF, 0xFF), -- PRIMARY_COLOR
+            lcd.RGB(0x48, 0x46, 0x5B), -- SECONDARY_BGCOLOR
+            lcd.RGB(0xDD, 0xD2, 0xD1), -- HIGHLIGHT_COLOR
+            lcd.RGB(0x27, 0x27, 0x27), -- HIGHLIGHT_INVERT_COLOR
+            lcd.RGB(0xA6, 0xA5, 0xB3), -- DISABLE_COLOR
+            lcd.RGB(0x27, 0x27, 0x27), -- PRIMARY_BGCOLOR
+            lcd.RGB(0x00, 0x00, 0x00), -- OVERLAY_COLOR
+            lcd.RGB(0xFF, 0xFF, 0xFF), -- SECONDARY_COLOR
+            lcd.RGB(0x24, 0x4E, 0x59), -- SAFE_COLOR
+            lcd.RGB(0x27, 0x27, 0x27), -- PAGE_BGCOLOR
+            lcd.RGB(0x70, 0x2C, 0x3D), -- ERROR_COLOR
+            lcd.RGB(0xDD, 0xD2, 0xD1), -- ACTIVE_COLOR
+            lcd.RGB(0xA6, 0xA5, 0xB3), -- INACTIVE_COLOR
+            lcd.RGB(0xFF, 0xFF, 0xFF), -- BUTTON_BORDER_ACTIVE_COLOR
+            lcd.RGB(0x8E, 0x70, 0x73), -- BUTTON_BORDER_COLOR
+            lcd.RGB(0x68, 0x40, 0x00), -- WARNING_COLOR
+            lcd.RGB(0xFF, 0xFF, 0xFF), -- SAFE_CONTRASTING_COLOR
+            lcd.RGB(0x27, 0x27, 0x27), -- TOPLCD_BGCOLOR
+        },
+        toolbarBackground = lcd.loadBitmap("header-charcoal-silence.png"),
+        toolbarLogo = "none",
+    })
+
+    system.registerTheme({
+        key = "OMPP3",
+        name = "Soft Macaron",
+        -- studio-branding: Soft Macaron
+        -- studio-preview: previews/soft-macaron.png
+        darkMode = false,
+        roundButtons = true,
+        focusStyle = "invert",
+        borderWidth = 3,
+        colors = {
+            lcd.RGB(0x30, 0x2B, 0x40), -- PRIMARY_COLOR
+            lcd.RGB(0xF2, 0xEF, 0xA4), -- SECONDARY_BGCOLOR
+            lcd.RGB(0xBD, 0xAA, 0xD0), -- HIGHLIGHT_COLOR
+            lcd.RGB(0x30, 0x2B, 0x40), -- HIGHLIGHT_INVERT_COLOR
+            lcd.RGB(0x78, 0x6B, 0x80), -- DISABLE_COLOR
+            lcd.RGB(0xED, 0xE8, 0xDC), -- PRIMARY_BGCOLOR
+            lcd.RGB(0x00, 0x00, 0x00), -- OVERLAY_COLOR
+            lcd.RGB(0x30, 0x2B, 0x40), -- SECONDARY_COLOR
+            lcd.RGB(0xC5, 0xE5, 0xCE), -- SAFE_COLOR
+            lcd.RGB(0xED, 0xE8, 0xDC), -- PAGE_BGCOLOR
+            lcd.RGB(0xF1, 0xB1, 0xBE), -- ERROR_COLOR
+            lcd.RGB(0x69, 0x48, 0x73), -- ACTIVE_COLOR
+            lcd.RGB(0x78, 0x6B, 0x80), -- INACTIVE_COLOR
+            lcd.RGB(0x30, 0x2B, 0x40), -- BUTTON_BORDER_ACTIVE_COLOR
+            lcd.RGB(0xBD, 0xAA, 0xD0), -- BUTTON_BORDER_COLOR
+            lcd.RGB(0xF8, 0xC3, 0xA6), -- WARNING_COLOR
+            lcd.RGB(0x30, 0x2B, 0x40), -- SAFE_CONTRASTING_COLOR
+            lcd.RGB(0xED, 0xE8, 0xDC), -- TOPLCD_BGCOLOR
+        },
+        toolbarBackground = lcd.loadBitmap("header-soft-macaron.png"),
+        toolbarLogo = "none",
+    })
+
+    system.registerTheme({
+        key = "OMPP4",
+        name = "Blue Ion",
+        -- studio-branding: Blue Ion
+        -- studio-preview: previews/blue-ion.png
+        darkMode = true,
+        roundButtons = true,
+        focusStyle = "invert",
+        borderWidth = 3,
+        colors = {
+            lcd.RGB(0xFF, 0xFF, 0xFF), -- PRIMARY_COLOR
+            lcd.RGB(0x32, 0x18, 0x77), -- SECONDARY_BGCOLOR
+            lcd.RGB(0x36, 0xE1, 0xED), -- HIGHLIGHT_COLOR
+            lcd.RGB(0x16, 0x10, 0x3C), -- HIGHLIGHT_INVERT_COLOR
+            lcd.RGB(0xA6, 0xA5, 0xB3), -- DISABLE_COLOR
+            lcd.RGB(0x21, 0x10, 0x50), -- PRIMARY_BGCOLOR
+            lcd.RGB(0x00, 0x00, 0x00), -- OVERLAY_COLOR
+            lcd.RGB(0xFF, 0xFF, 0xFF), -- SECONDARY_COLOR
+            lcd.RGB(0x24, 0x4E, 0x59), -- SAFE_COLOR
+            lcd.RGB(0x21, 0x10, 0x50), -- PAGE_BGCOLOR
+            lcd.RGB(0x70, 0x2C, 0x3D), -- ERROR_COLOR
+            lcd.RGB(0x36, 0xE1, 0xED), -- ACTIVE_COLOR
+            lcd.RGB(0xA6, 0xA5, 0xB3), -- INACTIVE_COLOR
+            lcd.RGB(0xFF, 0xFF, 0xFF), -- BUTTON_BORDER_ACTIVE_COLOR
+            lcd.RGB(0x29, 0x60, 0xFA), -- BUTTON_BORDER_COLOR
+            lcd.RGB(0x68, 0x40, 0x00), -- WARNING_COLOR
+            lcd.RGB(0xFF, 0xFF, 0xFF), -- SAFE_CONTRASTING_COLOR
+            lcd.RGB(0x21, 0x10, 0x50), -- TOPLCD_BGCOLOR
+        },
+        toolbarBackground = lcd.loadBitmap("header-blue-ion.png"),
+        toolbarLogo = "none",
+    })
+    -- END OMP PALETTE THEMES
 
 end
 
